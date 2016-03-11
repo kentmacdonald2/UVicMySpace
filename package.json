@@ -1,0 +1,17 @@
+{
+  "name": "UVicMySpace",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bitHero/UVicMySpace.git"
+  },
+  "bugs": "https://github.com/bitHero/UVicMySpace/issues",
+  "contributors": "https://github.com/bitHero/UVicMySpace/graphs/contributors",
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-sass": "^1.0.0"
+  }
+}
