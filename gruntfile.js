@@ -14,6 +14,17 @@ module.exports = function(grunt) {
         },
       }
     },
+    'compile-handlebars': {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '.',
+          src: ['*.hbs'],
+          dest: '.',
+          ext: '.html'
+        }]
+      }
+    },
     cssmin: {
       target: {
         files: [{
@@ -35,12 +46,12 @@ module.exports = function(grunt) {
 
   // Load the plugins.
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-compile-handlebars');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Tasks.
   grunt.registerTask('default', ['sass', 'cssmin', 'watch']);
   grunt.registerTask('build', ['sass', 'cssmin']);
-  grunt.registerTask('watcher', ['watch']);
 
 };
