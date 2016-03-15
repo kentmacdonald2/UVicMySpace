@@ -15,13 +15,31 @@ module.exports = function(grunt) {
       }
     },
     'compile-handlebars': {
-      dist: {
+      amy: {
         files: [{
           expand: true,
-          cwd: '.',
-          src: ['*.hbs'],
-          dest: '.',
+          cwd: 'templates/',
+          src: ['**/*.hbs'],
+          dest: 'out/amy/',
           ext: '.html'
+        }],
+        templateData: 'data/amy.json'
+      }
+    },
+    copy: {
+      assets: {
+        files: [{
+          expand: true,
+          cwd: 'assets/',
+          src: [
+            '**/*.css',
+            '**/*.eot',
+            '**/*.svg',
+            '**/*.ttf',
+            '**/*.woff',
+            '**/*.woff2'
+          ],
+          dest: 'out/assets/'
         }]
       }
     },
@@ -37,9 +55,17 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      css: {
+      styles: {
         files: 'assets/sass/**/*.scss',
-        tasks: ['sass', 'cssmin']
+        tasks: ['build-styles']
+      },
+      templates: {
+        files: 'templates/**/*.hbs',
+        tasks: ['build-templates']
+      },
+      data: {
+        files: 'data/**/*.json',
+        tasks: ['build-templates']
       }
     }
   });
@@ -48,10 +74,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-compile-handlebars');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Tasks.
-  grunt.registerTask('default', ['sass', 'cssmin', 'watch']);
-  grunt.registerTask('build', ['sass', 'cssmin']);
+  grunt.registerTask('build-styles', ['sass', 'cssmin', 'copy:assets']);
+  grunt.registerTask('build-templates', ['compile-handlebars']);
+  grunt.registerTask('build', ['build-templates', 'build-styles']);
+  grunt.registerTask('default', ['build', 'watch']);
 
 };
