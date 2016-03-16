@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "5"
+branches:
+  only:
+    - master
+before_script: bash ./init.sh
+script: bash ./deploy.sh
+env:
+  global:
+  - GH_REF: github.com/bitHero/UVicMySpace.git
+  - secure: f3t6zODu1goH/Gc8kXMMi54drQ8gNrNIq29Vp6DsOWaAkfeiHFwrJjI9u77zBi7HwaTTVA8TfoRFbCemWECHNbnP4/H/OuRqP4SLuSsQ4RVmrbjl7PFq3wqFMz/3N6WzPCBBO7LlHICzZh+D5rwCzZOhLZiorz30e8CMK6+2KGaZ8MFTeiYHejQzOKbAXC+nHqXmHHjwZLQWqgcT1GRP0rspxujwW3p+AJ9fnqsbD7kLTQjE7uBnBsemYCSMtIB9juIA7MvFP//+Ys9j23mtbluLh0zVeUBo1WR24pnbM9vyxcQltLk359lBNxa/bbDWnHnp6xtjuYpJlAEUvG6MHGZZUPVimotS2rd7gGnAqxykRxmiJi5cHD4YHENB+af1zDonTAEeR7QlIruh7fYPAZKOCODATcjEzu/Ve6MRoQXLNN6UUhaf5F3lmJ2jFtvyrokqHDxbF/t2K51MprqiivOdvIwy6FPpQ2DUQC+8WRFcgEOGWupPIMSLcvxDsHqgUzcwMUp0leM+cO8n0ZJ5ES6kv0cdRxBRROAcWjCJM8MOYazfjO/kDfNdJ6XM0nRm/gb8QGgvbFWfgsPkhOViviC8DBLVf0yceRqdzDSWs8TDkhhato/zCCZMlc6ILqALNZCWiMnNUqHoYJ2NhUbuW7AB5mdknmbvI6bmGymyIy4=
