@@ -20655,6 +20655,15 @@ th {
 .mypage .panel-danger > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #ebccd1;
 }
+.mypage .panel.with-nav-tabs .panel-heading {
+  padding: 10px 10px 0 10px;
+}
+.mypage .panel.with-nav-tabs .nav-tabs {
+  border-bottom: none;
+}
+.mypage .panel.with-nav-tabs .nav-tabs > li a {
+  color: #000;
+}
 .mypage .embed-responsive {
   position: relative;
   display: block;
