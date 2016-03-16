@@ -1,5 +1,7 @@
 # MyUVic
 
+[![Travis](https://img.shields.io/travis/bitHero/UVicMySpace.svg)](https://travis-ci.org/bitHero/UVicMySpace)
+
 ## Project Structure
 
 ### Templates
