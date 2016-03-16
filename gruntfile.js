@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         },
         files: {
           'assets/css/MyPage.css': 'assets/sass/MyPage.scss'
-        },
+        }
       }
     },
     'compile-handlebars': {
@@ -19,11 +19,12 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'templates/',
-          src: ['**/*.hbs'],
+          src: ['**/*.hbs', '!partials/**'],
           dest: 'out/amy/',
           ext: '.html'
         }],
-        templateData: 'data/amy.json'
+        templateData: 'data/amy.json',
+        partials: 'templates/partials/**/*.hbs'
       }
     },
     copy: {
