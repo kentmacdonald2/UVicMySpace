@@ -1,0 +1,20 @@
+
+.panel.with-nav-tabs {
+
+  .panel-heading {
+    padding: $padding-small-horizontal $padding-small-horizontal 0 $padding-small-horizontal;
+  }
+
+  // Tabs
+  // -------------------------
+
+  // Give the tabs something to sit on
+  .nav-tabs {
+    border-bottom: none;
+    > li {
+      a {
+        color: $gray-base;
+      }
+    }
+  }
+}
