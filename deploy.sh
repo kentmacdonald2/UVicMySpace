@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e # exit with nonzero exit code if anything fails
 
+git config --global push.default simple # make git be quiet
+
 LAST_COMMIT="$(git rev-parse --short HEAD)"
 
 # clone the old gh pages
@@ -20,7 +22,7 @@ git config user.name "Travis CI"
 git config user.email "travis.ci.build@gmail.com"
 
 # commit any new changes
-git add .
+git add --all .
 git commit -m "Travis CI - Deployed ${LAST_COMMIT}"
 
 # push to the repo
