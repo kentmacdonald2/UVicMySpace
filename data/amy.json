@@ -1,3 +1,7 @@
 {
-  "content": "Hi there!"
+  "user":
+  {
+    "path":"amy/",
+    "content": "This is Amy's content!"
+  }
 }

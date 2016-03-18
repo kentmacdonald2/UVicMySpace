@@ -1,3 +1,3 @@
 <ul class="nav nav-tabs">{{#each sections}}
-    <li{{#equals this ../active}} class="active"{{/equals}}><a {{#notequals this ../active}}href="{{path}}"{{/notequals}}>{{title}}</a></li>{{/each}}
+    <li{{#equals this ../active}} class="active"{{/equals}}><a {{#notequals this ../active}}href="/{{../user.path}}{{path}}"{{/notequals}}>{{title}}</a></li>{{/each}}
 </ul>
