@@ -19,11 +19,13 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'templates/',
-          src: ['**/*.hbs', '!partials/**'],
+          src: ['**/*.hbs', '!partials/**', '!helpers/**'],
           dest: 'out/amy/',
           ext: '.html'
         }],
         templateData: 'data/amy.json',
+        globals: ['data/globals.json'],
+        helpers: 'templates/helpers/**/*.js',
         partials: 'templates/partials/**/*.hbs'
       }
     },
@@ -61,11 +63,11 @@ module.exports = function(grunt) {
         tasks: ['build-styles']
       },
       templates: {
-        files: 'templates/**/*.hbs',
+        files: 'templates/**/*',
         tasks: ['build-templates']
       },
       data: {
-        files: 'data/**/*.json',
+        files: 'data/**/*',
         tasks: ['build-templates']
       }
     }

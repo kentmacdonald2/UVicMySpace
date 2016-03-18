@@ -1,15 +1,29 @@
 <!doctype html>
 <html>
 <head>
-    <title>Uvic-myspace by bitHero</title>
+    <title>{{page.title}}</title>
     {{> meta}}
     {{> imports}}
 </head>
 <body>
 {{> uvicNav}}
 {{> uvicHeader}}
+
 <div class="mypage">
-    {{> @partial-block }}
+    <div class="container">
+        <div id="content">
+            <div class="panel with-nav-tabs panel-default">
+                <div class="panel-heading">
+                    {{> nav active=page}}
+                </div>
+                <div class="panel-body">
+                    {{#with page}}
+                        {{> @partial-block }}
+                    {{/with}}
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 {{> uvicFooter}}

@@ -1,19 +1,5 @@
-{{#>default}}
-<div class="container">
-<div id="content">
-    <div class="panel with-nav-tabs panel-default">
-        <div class="panel-heading">
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Finances</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </div>
-        <div class="panel-body" style="min-height: 60vh;">
-
-        </div>
-    </div>
-</div>
+{{#>default page=sections.home}}
+<div style="min-height: 60vh;">
+    {{content}}
 </div>
 {{/default}}
