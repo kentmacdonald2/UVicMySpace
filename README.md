@@ -1,6 +1,6 @@
 # MyUVic
 
-[![Travis](https://img.shields.io/travis/bitHero/UVicMySpace.svg)](https://travis-ci.org/bitHero/UVicMySpace)
+[![Travis](https://img.shields.io/travis/hwkr/UVicMySpace.svg)](https://travis-ci.org/bitHero/UVicMySpace)
 
 ## Project Structure
 
@@ -27,9 +27,7 @@ To build this project you will need:
 * [Node.js](https://nodejs.org/en/)
 * [Grunt](http://gruntjs.com/)
 * [SASS](http://sass-lang.com/)
-* [Python*](https://www.python.org/) 
-
-*Optional
+* [Python](https://www.python.org/) 
 
 
 ### Set Up
@@ -67,21 +65,7 @@ in the root of the project. This will build all the output files then watch for 
 
 ### Debugging the Site
 
-When developing the website locally it's best to run a simple a local server and view/inspect the website in a web browser (Google Chrome has great debugging tools for this). To run the server we have many options, we'll discuss two, using JetBrains IntelliJ's Javascript Debug and using Python's Simple HTTP Server.
-
-#### With IntelliJ
-
-The IntelliJ method involves creating a JavaScript Debug Configuration in IntelliJ. IntelliJ will host your files with a basic server so you can debug the site in a browser.
-
-1. Import the project into IntelliJ, `File > Open...`
-2. Open a Configurations, `Run > Edit Configurations...`
-3. Create a new Configuration, `PLUS > JavaScript Debug`
-4. Give it a name and point it to an "URL", e.g., `http://localhost:63342/UVicMySpace/out/amy/`
-5. Hit `OK` and run your Configuration (top right)
-
-#### With Python
-
-Python includes a module that can be used to run a server out of any local directory. To use this module you must have Python installed.
+When developing the website locally it's best to run a simple a local server and view/inspect the website in a web browser (Google Chrome has great debugging tools for this). Python includes a module that can be used to run a server out of any local directory. To use this module you must have Python installed.
 
 1. Open a Terminal
 2. `cd` to the directory you want to host, e.g., `out/amy/`
