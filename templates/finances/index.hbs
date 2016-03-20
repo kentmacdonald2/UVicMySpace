@@ -6,9 +6,83 @@
         - Data comes in from JSON files, please put all data/strings in the JSON files
         - Keep the data organized, if you're adding financial data put it under "finances"
     }}
+
+    <div class="btn-group">
+        <button class="btn">Balances</button>
+        <button class="btn">Awards</button>
+        <button class="btn">Tax Slips</button>
+    </div>
+
+
+
     {{! Access the page context with `page` (see globals.json)}}
-    <h2>{{page.title}}</h2>
+
     {{! Access the page context with `user` (see amy.json)}}
     <p>{{user.content}}</p>
+    <h3>{{user.classes}}</h3>
+
+    <div class="container">
+
+        <div class="col-xs-6">
+            <h2 class="sub-header">Spring 2016</h2>
+            <p>Semester Balance: $0.00</p>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th class="col-md-3">Courses</th>
+                    <th class="col-md-9">Amount</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>SENG 321</td>
+                    <td>582.27</td>
+                </tr>
+                <tr>
+                    <td>CSC 226</td>
+                    <td>582.27</td>
+                </tr>
+                <tr>
+                    <td>ELEC 310</td>
+                    <td>582.27</td>
+                </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <div class="col-xs-6">
+        <h2 class="sub-header">Balance</h2>
+        <p>Current Balance: $0.00</p>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th class="col-md-3">Courses</th>
+                <th class="col-md-9">Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>SENG 321</td>
+                <td>582.27</td>
+            </tr>
+            <tr>
+                <td>CSC 226</td>
+                <td>582.27</td>
+            </tr>
+            <tr>
+                <td>ELEC 310</td>
+                <td>582.27</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+</div>
+
+
+
 </div>
 {{/default}}
