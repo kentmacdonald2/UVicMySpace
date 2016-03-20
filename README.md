@@ -1,6 +1,6 @@
 # MyUVic
 
-[![Travis](https://img.shields.io/travis/hwkr/UVicMySpace.svg)](https://travis-ci.org/bitHero/UVicMySpace)
+[![Travis](https://img.shields.io/travis/hwkr/UVicMySpace.svg)](https://travis-ci.org/hwkr/UVicMySpace)
 
 ## Project Structure
 
