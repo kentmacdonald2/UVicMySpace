@@ -49,12 +49,32 @@
     "finances": {
       "title": "Finances",
       "path": "finances/",
-      "subsections": []
+      "start_page": "account",
+      "subsections": {
+        "account": {
+          "title": "Account",
+          "path": "account.html"
+        },
+        "taxes": {
+          "title": "Tax Slips",
+          "path": "taxes.html"
+        },
+        "awards": {
+          "title": "Awards",
+          "path": "awards.html"
+        }
+      }
     },
     "help": {
       "title": "Help",
       "path": "help/",
-      "subsections": []
+      "start_page": "faq",
+      "subsections": {
+        "faq": {
+          "title": "FAQ",
+          "path": "faq.html"
+        }
+      }
     }
   }
 }
