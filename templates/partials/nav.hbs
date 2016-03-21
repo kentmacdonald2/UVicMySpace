@@ -1,3 +1,5 @@
 <ul class="nav nav-tabs">{{#each sections}}
-    <li{{#equals this ../active}} class="active"{{/equals}}><a {{#notequals this ../active}}href="/{{../user.path}}{{path}}"{{/notequals}}>{{title}}</a></li>{{/each}}
+    <li{{#if (equals this ../section)}} class="active"{{/if}}>
+        <a {{#unless (equals this ../section)}}href="/{{../user.path}}{{path}}{{lookup (lookup subsections start_page) "path"}}"{{/unless}}>{{title}}</a>
+    </li>{{/each}}
 </ul>

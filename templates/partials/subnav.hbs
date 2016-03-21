@@ -1,0 +1,7 @@
+<ul class="nav nav-pills">{{#each section.subsections}}
+    <li {{#if (equals this ../page)}}class="active"{{/if}}>
+        <a {{#unless (equals this ../page)}}href="/{{../user.path}}{{../section.path}}{{path}}"{{/unless}}>
+            {{title}}
+        </a>
+    </li>{{/each}}
+</ul>
