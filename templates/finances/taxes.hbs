@@ -1,0 +1,82 @@
+{{#>default section=sections.finances page=sections.finances.subsections.account}}
+<div style="min-height: 60vh;">
+    {{! This is the starter for a section page
+        -------------------------------------------------------
+        - The tag at the top brings in the default portions
+        - Data comes in from JSON files, please put all data/strings in the JSON files
+        - Keep the data organized, if you're adding financial data put it under "finances"
+    }}
+
+
+    {{! Access the page context with `page` (see globals.json)}}
+    <h2>Proof of Enrollment</h2>
+
+    <!-- Semester Button -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Semester <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Summer 2013</a></li>
+            <li><a href="#">Fall 2013</a></li>
+            <li><a href="#">Spring 2014</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">All</a></li>
+        </ul>
+    </div>
+    {{!Print Button}}
+    <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+    {{!Download Button}}
+    <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+
+    <h2>T2202A Tax Form</h2>
+    {{!T2202A Tax Form}}
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Semester <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Summer 2013</a></li>
+            <li><a href="#">Fall 2013</a></li>
+            <li><a href="#">Spring 2014</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">All</a></li>
+        </ul>
+    </div>
+    {{!Print Button}}
+    <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+    {{!Download Button}}
+    <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+
+    <h2>T4A/T4 Tax Form</h2>
+    {{!T2202A Tax Form}}
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Semester <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Summer 2013</a></li>
+            <li><a href="#">Fall 2013</a></li>
+            <li><a href="#">Spring 2014</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">All</a></li>
+        </ul>
+    </div>
+    {{!Print Button}}
+    <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+    {{!Download Button}}
+    <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+
+
+
+    {{! Access the page context with `user` (see amy.json)
+    <p>{{user.content}}{{!</p>}}
+
+
+    {{!Print Script}}
+    <script>
+        function printFunction() {
+            window.print();
+        }
+    </script>
+{{/default}}
