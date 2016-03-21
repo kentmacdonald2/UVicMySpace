@@ -12,6 +12,14 @@
         "timetable": {
           "title": "Timetable",
           "path": "timetable.html"
+        },
+        "program_change": {
+          "title": "Program",
+          "path": "program.html"
+        },
+        "graduation": {
+          "title": "Graduation",
+          "path": "graduation.html"
         }
       }
     },

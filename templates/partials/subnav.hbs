@@ -1,0 +1,13 @@
+<ul class="list-inline">{{#each section.subsections}}
+    <li>
+        {{#if (equals this ../page)}}
+            <b>
+                {{title}}
+            </b>
+        {{else}}
+        <a href="/{{../user.path}}{{../section.path}}{{path}}">
+            {{title}}
+        </a>
+        {{/if}}
+    </li>{{/each}}
+</ul>
