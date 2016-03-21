@@ -6,14 +6,23 @@
         - Data comes in from JSON files, please put all data/strings in the JSON files
         - Keep the data organized, if you're adding financial data put it under "finances"
     }}
-
+<div>
+    <div class="col-xs-6">
     <div class="btn-group">
-        <button class="btn">Balances</button>
-        <button class="btn">Awards</button>
-        <button class="btn">Tax Slips</button>
+        <div align="left">
+            <button class="btn">Balances</button>
+            <button class="btn">Awards</button>
+            <button class="btn">Tax Slips</button>
+        </div>
+    </div>
     </div>
 
-
+    <div class="col-xs-6">
+        <div align="right">
+            <button type="button" class="btn btn-default">Print</button>
+        </div>
+    </div>
+</div>
 
     {{! Access the page context with `page` (see globals.json)}}
 
@@ -82,7 +91,7 @@
 
 </div>
 
-
-
 </div>
+
+
 {{/default}}
