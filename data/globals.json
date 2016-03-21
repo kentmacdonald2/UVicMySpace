@@ -26,7 +26,25 @@
     "records": {
       "title": "Records",
       "path": "records/",
-      "subsections": []
+      "start_page": "grades",
+      "subsections": {
+        "grades": {
+          "title": "Grades",
+          "path": "grades.html"
+        },
+        "transcripts": {
+          "title": "Transcripts",
+          "path": "transcripts.html"
+        },
+        "verification": {
+          "title": "Verification of Enrollment",
+          "path": "verification.html"
+        },
+        "report": {
+          "title": "CAPP Report",
+          "path": "report.html"
+        }
+      }
     },
     "finances": {
       "title": "Finances",
