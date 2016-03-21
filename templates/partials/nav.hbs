@@ -1,5 +1,5 @@
 <ul class="nav nav-tabs">{{#each sections}}
-    <li{{#if (isactive this ../page)}} class="active"{{/if}}>
-        <a {{#unless (isactive this ../page)}}href="/{{../user.path}}{{path}}{{lookup (lookup subsections start_page) "path"}}"{{/unless}}>{{title}}</a>
+    <li{{#if (contains subsections ../page)}} class="active"{{/if}}>
+        <a {{#unless (contains subsections ../page)}}href="/{{../user.path}}{{path}}{{lookup (lookup subsections start_page) "path"}}"{{/unless}}>{{title}}</a>
     </li>{{/each}}
 </ul>
