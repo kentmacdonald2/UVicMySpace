@@ -1,13 +1,7 @@
-<ul class="list-inline">{{#each section.subsections}}
-    <li>
-        {{#if (equals this ../page)}}
-            <b>
-                {{title}}
-            </b>
-        {{else}}
-        <a href="/{{../user.path}}{{../section.path}}{{path}}">
+<ul class="nav nav-pills">{{#each section.subsections}}
+    <li {{#if (equals this ../page)}}class="active"{{/if}}>
+        <a {{#unless (equals this ../page)}}href="/{{../user.path}}{{../section.path}}{{path}}"{{/unless}}>
             {{title}}
         </a>
-        {{/if}}
     </li>{{/each}}
 </ul>
