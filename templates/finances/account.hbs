@@ -6,9 +6,109 @@
         - Data comes in from JSON files, please put all data/strings in the JSON files
         - Keep the data organized, if you're adding financial data put it under "finances"
     }}
-    {{! Access the page context with `page` (see globals.json)}}
-    <h2>{{page.title}}</h2>
-    {{! Access the page context with `user` (see amy.json)}}
-    <p>{{user.content}}</p>
+
+
+    {{! Access the page context with `page` (see globals.json)
+    <h2>{{page.title}}{{!</h2>}}
+    {{! Access the page context with `user` (see amy.json)
+    <p>{{user.content}}{{!</p>}}
+
+
+
+    {{!Start of the tables}}
+    <div class="row">
+        <div class="col-xs-6">
+            <h2 class="sub-header">Spring 2016
+
+                {{!Print Button}}
+                <div class="btn-group">
+                    <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </div>
+
+
+
+            </h2>
+            <p>Semester Balance: $0.00</p>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th class="col-md-3">Courses</th>
+                    <th class="col-md-9">Amount</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{user.class1}}</td>
+                    <td>{{user.price1}}</td>
+                </tr>
+                <tr>
+                    <td>{{user.class2}}</td>
+                    <td>{{user.price2}}</td>
+                </tr>
+                <tr>
+                    <td>{{user.class3}}</td>
+                    <td>{{user.price3}}</td>
+                </tr>
+                <tr>
+                    <td>{{user.class4}}</td>
+                    <td>{{user.price4}}</td>
+                </tr>
+                <tr>
+                    <td>{{user.class5}}</td>
+                    <td>{{user.price5}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-xs-6">
+            <h2 class="sub-header">Balance
+            </h2>
+            <p>Current Balance: $0.00</p>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th class="col-md-3">Semester</th>
+                    <th class="col-md-9">Amount</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Spring 2016</td>
+                    <td>$3,500</td>
+                </tr>
+                <tr>
+                    <td>Fall 2015</td>
+                    <td>$3,500</td>
+                </tr>
+                <tr>
+                    <td>Summer 2015</td>
+                    <td>$2,750</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <script>
+            function printFunction() {
+                window.print();
+            }
+        </script>
+
+
+
+
 </div>
 {{/default}}
