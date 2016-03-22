@@ -6,7 +6,7 @@ git config --global push.default simple # make git be quiet
 LAST_COMMIT="$(git rev-parse --short HEAD)"
 
 # clone the old gh pages
-git clone "https://${GH_TOKEN}@${GH_REF}" out/
+git clone "https://${GH_TOKEN}@${GH_REF}" UVicMySpace/
 cd UVicMySpace/
 git checkout gh-pages
 rm -rf *
