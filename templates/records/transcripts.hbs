@@ -1,4 +1,4 @@
-{{#>default section=sections.records page=sections.records.subsections.grades}}
+{{#>default section=sections.records page=sections.records.subsections.transcripts}}
 <div style="min-height: 60vh;">
     {{! This is the starter for a section page
         -------------------------------------------------------
@@ -6,27 +6,120 @@
         - Data comes in from JSON files, please put all data/strings in the JSON files
         - Keep the data organized, if you're adding financial data put it under "finances"
     }}
-    {{#each user.records.grades}}
-        <h2>{{semester}}</h2>
-        <p><span class="text-muted">Semester GPA </span><span class="badge">{{semester_GPA}}</span></p>
-        <!-- Grade Table -->
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Course</th>
-                    <th>Percent</th>
-                    <th>Letter Grade</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>{{#each courses}}
-                    <td>{{code}}{{number}}</td>
-                    <td>{{percent}}</td>
-                    <td>{{letter}}</td>
-                </tr>{{/each}}
-            </tbody>
-        </table>
-    {{/each}}
+    <!--Unofficial Transcript Column-->
+    <div class="col-md-8">
+        <h2>Unofficial Transcript</h2>
+        <p>Some Text</p>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                {{#each user.records.grades}}
+                    <h3>{{semester}}</h3>
+                    <p><span class="text-muted">Semester GPA </span><span class="badge">{{semester_GPA}}</span></p>
+                    <!-- Grade Table -->
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Percent</th>
+                            <th>Letter Grade</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>{{#each courses}}
+                                <td>{{code}}{{number}}</td>
+                                <td>{{percent}}</td>
+                                <td>{{letter}}</td>
+                            </tr>{{/each}}
+                        </tbody>
+                    </table>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+
+    <!--Official Transcript Column-->
+    <div class="col-md-4">
+        <h2>Official Transcript</h2>
+        <p>Some Text</p>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h3>Order Transcript</h3>
+                <p>More Text</p>
+
+                <h4>Order Priority</h4>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadiosPriority" id="optionsRadios1" value="option1" checked>
+                        Regular
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadiosPriority" id="optionsRadios2" value="option2" unchecked>
+                            Express
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Hold for degree
+                    </label>
+                </div>
+
+                <h4>Delivery Method</h4>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadiosDelivery" id="optionsRadios1" value="option1" checked>
+                        Pick-up
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadiosDelivery" id="optionsRadios2" value="option2" unchecked>
+                        Regular Mail
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadiosDelivery" id="optionsRadios3" value="option3" unchecked>
+                        Courier in Canada
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadiosDelivery" id="optionsRadios4" value="option4" unchecked>
+                        Courier outside of Canada
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Fax Service
+                    </label>
+                </div>
+
+                <h4>Total</h4>
+                <div class="btn-group">
+                    $10 x
+                    <span>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            1 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                        </ul>
+                    </span>
+
+                    copies
+                </div>
+                <button class="btn btn-default" type="submit">Place Order</button>
+            </div>
+        </div>
+    </div>
 
 </div>
 {{/default}}
