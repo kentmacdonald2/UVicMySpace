@@ -1,0 +1,34 @@
+{{#>default section=sections.records page=sections.records.subsections.verification}}
+<div style="min-height: 60vh;">
+    {{! This is the starter for a section page
+        -------------------------------------------------------
+        - The tag at the top brings in the default portions
+        - Data comes in from JSON files, please put all data/strings in the JSON files
+        - Keep the data organized, if you're adding financial data put it under "finances"
+    }}
+    <div class="col-md-12">
+        <h4><b>Proof of Enrollment</b></h4>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th class="col-md-8"></th>
+                <th class="col-md-2"></th>
+                <th class="col-md-2"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>{{#each user.records.grades}}
+                <td>{{semester}}</td>
+                <td>
+                    <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+                </td>
+                <td>
+                    <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+                </td>
+            </tr>{{/each}}
+            </tbody>
+        </table>
+    </div>
+
+</div>
+{{/default}}
