@@ -1,0 +1,131 @@
+{{#>default section=sections.finances page=sections.finances.subsections.awards}}
+<div style="min-height: 60vh;">
+    {{! This is the starter for a section page
+        -------------------------------------------------------
+        - The tag at the top brings in the default portions
+        - Data comes in from JSON files, please put all data/strings in the JSON files
+        - Keep the data organized, if you're adding financial data put it under "finances"
+    }}
+    {{! Access the page context with `page` (see globals.json)}}
+    {{! Access the page context with `user` (see amy.json)}}
+    <h2>Apply</h2>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th class="col-md-4">Name</th>
+            <th class="col-md-3">Description</th>
+            <th class="col-md-2">Accepting Applications</th>
+            <th class="col-md-2">Deadline</th>
+            <th class="col-md-1">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>UVic Excellence Award</td>
+            <td><a href="http://www.yahoo.com">More Info</a></td>
+            <td>2016-01-01</td>
+            <td>2016-06-31</td>
+            <td><a href="#" class="btn btn-primary btn-success">Apply Now</a></td>
+        </tr>
+        <tr>
+            <td>UVic Athletic Achievement Award</td>
+            <td><a href="http://www.yahoo.com">More Info</a></td>
+            <td>2016-02-01</td>
+            <td>2016-04-31</td>
+            <td><a href="#" class="btn btn-primary btn-success">Apply Now</a></td>
+        </tr>
+        <tr>
+            <td>D.Trump Award for Excellence in Wall-Building</td>
+            <td><a href="http://www.yahoo.com">More Info</a></td>
+            <td>2016-01-01</td>
+            <td>2017-01-01</td>
+            <td><a href="#" class="btn btn-primary btn-success">Apply Now</a></td>
+        </tr>
+        <tr>
+            <td>R.A. Stimpleson Memorial Award</td>
+            <td><a href="http://www.yahoo.com">More Info</a></td>
+            <td>2014-11-21</td>
+            <td>2018-11-20</td>
+            <td><a href="#" class="btn btn-primary btn-success">Apply Now</a></td>
+        </tr>
+        <tr>
+            <td>Govt. Of Canada - Maple Leaf Prize</td>
+            <td><a href="http://www.yahoo.com">More Info</a></td>
+            <td>2016-05-01</td>
+            <td>2017-04-30</td>
+            <td><a href="#" class="btn btn-warning">Watch</a></td>
+        </tr>
+        <tr>
+            <td>UVSS Sign-Making Excellence Scholarship</td>
+            <td><a href="http://www.yahoo.com">More Info</a></td>
+            <td>2017-01-01</td>
+            <td>2017-04-30</td>
+            <td><a href="#" class="btn btn-warning">Watch</a></td>
+        </tr>
+
+        </tbody>
+    </table>
+
+    <h2>Review</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th class="col-md-4">Name</th>
+            <th class="col-md-3">Description</th>
+            <th class="col-md-2">Deadline</th>
+            <th class="col-md-2">Date Submitted</th>
+            <th class="col-md-1">Application Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="success">
+            <td> 2014 UVic Excellence Award</td>
+            <td><a href="http://www.yahoo.com">More Info</a></td>
+            <td>2014-01-01</td>
+            <td>2013-11-27</td>
+            <td>Approved</td>
+        </tr>
+        <tr class="success">
+            <td>University of Victoria Entrance Scholarship</td>
+            <td><a href="http://www.yahoo.com">More Info</a></td>
+            <td>2013-07-31</td>
+            <td>2013-06-02</td>
+            <td>Approved</td>
+        </tr>
+        <tr class="danger">
+            <td>MacArthur Genius Grant</td>
+            <td><a href="http://www.yahoo.com">More Info</a></td>
+            <td>2013-07-31</td>
+            <td>2013-06-02</td>
+            <td>Rejected</td>
+        </tr>
+        <tr class="warning">
+            <td>2015 Turing Award</td>
+            <td><a href="http://www.yahoo.com">More Info</a></td>
+            <td>2014-03-31</td>
+            <td>2014-02-29</td>
+            <td>Pending</td>
+        </tr>
+        <tr class="success">
+            <td>UVSS Advocacy Scholarship</td>
+            <td><a href="http://www.yahoo.com">More Info</a></td>
+            <td>2015-11-20</td>
+            <td>2014-10-18</td>
+            <td>Approved</td>
+        </tr>
+        <tr class="warning">
+            <td>Whitecaps F.C. Scholarship</td>
+            <td><a href="http://www.yahoo.com">More Info</a></td>
+            <td>2016-11-21</td>
+            <td>2016-01-13</td>
+            <td>Pending</td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+</div>
+{{/default}}

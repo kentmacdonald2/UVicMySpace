@@ -1,4 +1,4 @@
-{{#>default section=sections.finances page=sections.finances.subsections.account}}
+{{#>default section=sections.finances page=sections.finances.subsections.taxes}}
 <div style="min-height: 60vh;">
     {{! This is the starter for a section page
         -------------------------------------------------------
@@ -6,17 +6,25 @@
         - Data comes in from JSON files, please put all data/strings in the JSON files
         - Keep the data organized, if you're adding financial data put it under "finances"
     }}
-
+    <div class="row col-md-12">
+        <h2>About Tax Forms</h2>
+        <p>When filing your annual income tax, you may be required to submit one or more of the available forms.
+        Check with your accountant or tax professional for more information</p>
+        <h1></h1>
+    </div>
 
     {{! Access the page context with `page` (see globals.json)}}
-    <h2>Proof of Enrollment</h2>
 
-    <table class="table table-condensed table-striped col-md-3">
+    <h2>Available Documents</h2>
+
+    <div class="col-md-4">
+        <h4><b>Proof of Enrollment</b></h4>
+        <table class="table table-condensed table-striped col-md-3">
         <thead>
         <tr>
-            <th class="col-md-2">Semester</th>
+            <th class="col-md-10"></th>
             <th class="col-md-1"></th>
-            <th class="col-md-8"></th>
+            <th class="col-md-1"></th>
         </tr>
         </thead>
         <tbody>
@@ -59,15 +67,19 @@
 
         </tbody>
     </table>
+    </div>
 
-    <h2>T2202A Tax Form</h2>
+
+
     {{!T2202A Tax Form}}
-    <table class="table table-condensed table-striped col-md-3">
+    <div class="col-md-4">
+        <h4><b>T2202A Form</b></h4>
+        <table class="table table-condensed table-striped col-md-3">
         <thead>
         <tr>
-            <th class="col-md-2">Semester</th>
+            <th class="col-md-10"></th>
             <th class="col-md-1"></th>
-            <th class="col-md-8"></th>
+            <th class="col-md-1"></th>
         </tr>
         </thead>
         <tbody>
@@ -110,18 +122,20 @@
 
         </tbody>
     </table>
+    </div>
 
 
 
 
-    <h2>T4A/T4 Tax Form</h2>
-    {{!T2202A Tax Form}}
-    <table class="table table-condensed table-striped col-md-3">
+    {{!T4 Tax Form}}
+    <div class="col-md-4">
+        <h4><b>T4 Form</b></h4>
+        <table class="table table-condensed table-striped col-md-3">
         <thead>
         <tr>
-            <th class="col-md-2">Semester</th>
+            <th class="col-md-10"></th>
             <th class="col-md-1"></th>
-            <th class="col-md-8"></th>
+            <th class="col-md-1"></th>
         </tr>
         </thead>
         <tbody>
@@ -164,6 +178,9 @@
 
         </tbody>
     </table>
+    </div>
+
+
 
 
 </div>
