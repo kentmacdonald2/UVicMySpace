@@ -6,28 +6,23 @@
         - Data comes in from JSON files, please put all data/strings in the JSON files
         - Keep the data organized, if you're adding financial data put it under "finances"
     }}
-    <div class="col-md-12">
-        <h4><b>Proof of Enrollment</b></h4>
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th class="col-md-8"></th>
-                <th class="col-md-2"></th>
-                <th class="col-md-2"></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>{{#each user.records.grades}}
-                <td>{{semester}}</td>
-                <td>
-                    <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
-                </td>
-                <td>
-                    <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
-                </td>
-            </tr>{{/each}}
-            </tbody>
-        </table>
+    <div class="col-md-6">
+        <h3>{{page.title}}</h3>
+        <div class="panel panel-default">
+            <table class="table table-hover" width="100%">
+                <tbody>
+                <tr>{{#each user.records.grades}}
+                        <td width="35%">
+                            <h4>{{semester}}</h4>
+                        </td>
+                        <td class="text-right" width="65%">
+                            <a class="btn btn-default"><i class="fa fa-print"></i> Print</a>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-download"></i> Download</a>
+                        </td>
+                    </tr>{{/each}}
+                </tbody>
+            </table>
+        </div>
     </div>
 
 </div>
