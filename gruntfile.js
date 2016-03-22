@@ -20,7 +20,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'templates/',
           src: ['**/*.hbs', '!partials/**', '!helpers/**'],
-          dest: 'out/amy/',
+          dest: 'UVicMySpace/amy/',
           ext: '.html'
         }],
         templateData: 'data/amy.json',
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
             '**/*.woff',
             '**/*.woff2'
           ],
-          dest: 'out/assets/'
+          dest: 'UVicMySpace/assets/'
         }]
       }
     },
