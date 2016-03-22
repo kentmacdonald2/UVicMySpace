@@ -2,7 +2,36 @@
   "sections": {
     "home": {
       "title": "Home",
-      "path": ""
+      "path": "",
+      "active_panel": "week",
+      "panels": {
+        "week": {
+          "title": "Week",
+          "title_long": "Your Week",
+          "template": "week_panel",
+          "days": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "times": {
+            "start": 8,
+            "end": 17
+          }
+        },
+        "grades": {
+          "title": "Grades",
+          "content": "Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.",
+          "template": "week_panel"
+        },
+        "account": {
+          "title": "Account",
+          "content": "Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.",
+          "template": "week_panel"
+        }
+      }
     },
     "courses": {
       "title": "Courses",

@@ -1,4 +1,5 @@
 {{#>default section=sections.home page=sections.home}}
+<<<<<<< HEAD
 <div style="min-height: 60vh;">
     {{! This is the starter for a section page
         -------------------------------------------------------
@@ -11,5 +12,24 @@
 
     {{! Access the page context with `user` (see amy.json)}}
     <p>{{user.content}}</p>
+=======
+<div class="dashboard col-md-8">
+    <h3>Dashboard</h3>
+    <!-- tabs bottom -->
+    <div class="tabbable tabs-below">
+        <div class="panel panel-default tab-content">{{#each page.panels}}
+            <div class="panel-body tab-pane{{#if (equals ../page.active_panel @key)}} active{{/if}}"
+                 id="dashboard-{{@key}}">
+                {{>(lookup . "template")}}
+            </div>{{/each}}
+        </div>
+        <ul class="nav nav-tabs">{{#each page.panels}}
+            <li class="{{#if (equals ../page.active_panel @key)}}active{{/if}}">
+                <a href="#dashboard-{{@key}}" data-toggle="tab">{{title}}</a>
+            </li>{{/each}}
+        </ul>
+    </div>
+    <!-- /tabs -->
+>>>>>>> hwkr/master
 </div>
 {{/default}}
