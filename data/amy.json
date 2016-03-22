@@ -72,47 +72,47 @@
           "payments": 3312.67
         }
       ]
+    },
+    "records": {
+      "overall_GPA": 7,
+      "grades": [
+        {
+          "semester": "Spring 2016",
+          "semester_GPA": 7.8,
+          "courses": [
+            {
+              "code": "CSC",
+              "number": 226,
+              "letter": "A-",
+              "percent": 82
+            },
+            {
+              "code": "MATH",
+              "number": 201,
+              "letter": "B-",
+              "percent": 71
+            }
+          ]
+        },
+        {
+          "semester": "Fall 2015",
+          "semester_GPA": 6.8,
+          "courses": [
+            {
+              "code": "CSC",
+              "number": 225,
+              "letter": "A",
+              "percent": 87
+            },
+            {
+              "code": "MATH",
+              "number": 101,
+              "letter": "B",
+              "percent": 75
+            }
+          ]
+        }
+      ]
     }
-  },
-  "records": {
-    "overall_GPA": 7,
-    "grades": [
-      {
-        "semester": "Spring 2016",
-        "semester_GPA": 7.8,
-        "courses": [
-          {
-            "code": "CSC",
-            "number": 226,
-            "letter": "A-",
-            "percent": 82
-          },
-          {
-            "code": "MATH",
-            "number": 201,
-            "letter": "B-",
-            "percent": 71
-          }
-        ]
-      },
-      {
-        "semester": "Fall 2015",
-        "semester_GPA": 6.8,
-        "courses": [
-          {
-            "code": "CSC",
-            "number": 225,
-            "letter": "A",
-            "percent": 87
-          },
-          {
-            "code": "MATH",
-            "number": 101,
-            "letter": "B",
-            "percent": 75
-          }
-        ]
-      }
-    ]
   }
 }
