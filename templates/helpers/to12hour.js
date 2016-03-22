@@ -1,6 +1,9 @@
 module.exports = function(time) {
     if (time > 12) {
-        return time - 12;
+        return time - 12 + " PM";
     }
-    return time;
+    if (time == 12) {
+        return time + " PM";
+    }
+    return time + " AM";
 };
