@@ -6,9 +6,141 @@
         - Data comes in from JSON files, please put all data/strings in the JSON files
         - Keep the data organized, if you're adding financial data put it under "finances"
     }}
-    {{! Access the page context with `page` (see globals.json)}}
-    <h2>{{page.title}}</h2>
-    {{! Access the page context with `user` (see amy.json)}}
-    <p>{{user.content}}</p>
+
+
+    {{! Access the page context with `page` (see globals.json)
+    <h2>{{page.title}}{{!</h2>}}
+    {{! Access the page context with `user` (see amy.json)
+    <p>{{user.content}}{{!</p>}}
+
+
+
+    {{!Start of the tables}}
+    <div class="row">
+        <div class="col-xs-6">
+            <h2 class="sub-header">Spring 2016
+                <div class=pull-right>
+                    {{!Print Button}}
+                    <div class="btn-group">
+
+                            <button type="button" onclick="printFunction()" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Print <i class="fa fa-print"></i> <span class="caret"></span>
+                            </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Summer 2013</a></li>
+                            <li><a href="#">Fall 2013</a></li>
+                            <li><a href="#">Spring 2014</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">All</a></li>
+                        </ul>
+                    </div>
+                 </div>
+
+
+
+            </h2>
+            <p>Semester Balance: $0.00</p>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th class="col-md-3">Courses</th>
+                    <th class="col-md-3">Amount</th>
+                    <th class="col-md-3">Paid</th>
+                    <th class="col-md-3 ">Due</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{user.class1}}</td>
+                    <td>{{user.price1}}</td>
+                    <td>$0.00</td>
+                    <td class="danger">{{user.price1}}</td>
+                </tr>
+                <tr>
+                    <td>{{user.class2}}</td>
+                    <td>{{user.price2}}</td>
+                    <td>{{user.price2}}</td>
+                    <td class="success">$0.00</td>
+                </tr>
+                <tr>
+                    <td>{{user.class3}}</td>
+                    <td>{{user.price3}}</td>
+                    <td>{{user.price3}}</td>
+                    <td class="success">$0.00</td>
+                </tr>
+                <tr>
+                    <td>{{user.class4}}</td>
+                    <td>{{user.price4}}</td>
+                    <td>{{user.price4}}</td>
+                    <td class="success">$0.00</td>
+                </tr>
+                <tr>
+                    <td>{{user.class5}}</td>
+                    <td>{{user.price5}}</td>
+                    <td>{{user.price5}}</td>
+                    <td class="success">$0.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-xs-6">
+            <h2 class="sub-header">Balance
+                <div class=pull-right>
+                    <a href="#" class="btn btn-info">Pay Now <i class="fa fa-credit-card"></i></a>
+                </div>
+            </h2>
+
+
+
+
+
+            <p>Current Balance: $0.00</p>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th class="col-md-3">Semester</th>
+                    <th class="col-md-3">Amount</th>
+                    <th class="col-md-3">Paid</th>
+                    <th class="col-md-3 ">Due</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Spring 2016</td>
+                    <td>$3,500</td>
+                    <td>$3,000</td>
+                    <td class = "danger">$500.00</td>
+
+                </tr>
+                <tr>
+                    <td>Fall 2015</td>
+                    <td>$3,500</td>
+                    <td>$3,500</td>
+                    <td class = "success">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Summer 2015</td>
+                    <td>$2,750</td>
+                    <td>$2,750</td>
+                    <td class = "success">$0.00</td>
+                </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+
+
+        <script>
+            function printFunction() {
+                window.print();
+            }
+        </script>
+
+
+
+
 </div>
 {{/default}}

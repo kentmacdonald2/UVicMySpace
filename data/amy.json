@@ -2,6 +2,17 @@
   "user": {
     "path": "amy/",
     "content": "This is Amy's content!",
+    "financeList" : "Some 400 - $99.00",
+    "class1" : "SENG 310",
+    "class2" : "ELEC 427",
+    "class3" : "CSC 226",
+    "class4" : "PSYC 345A",
+    "class5" : "SENG 401",
+    "price1" : "$547.00",
+    "price2" : "$547.00",
+    "price3" : "$547.00",
+    "price4" : "$547.00",
+    "price5" : "$547.00",
     "records": {
       "overall_GPA":7,
       "grades": [

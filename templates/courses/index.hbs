@@ -8,7 +8,56 @@
     }}
     {{! Access the page context with `page` (see globals.json)}}
     <h2>{{page.title}}</h2>
+    {{! Buttons at the top}}
+
+
+    <div class="btn-group">
+        <button class="btn">nvm</button>
+        <button class="btn">Middle</button>
+        <button class="btn">Right</button>
+    </div>
+
+
+
+
+
+
     {{! Access the page context with `user` (see amy.json)}}
     <p>{{user.content}}</p>
+
+
+    <p>{{user.content}}</p>
+
+    <div class="container">
+        <h3>Spring 2016</h3>
+        <p>Semester Balance: $0.00</p>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Courses</th>
+                <th>Amount</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>SENG 321</td>
+                <td>582.27</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>CSC 226</td>
+                <td>582.27</td>
+                <td>mary@example.com</td>
+            </tr>
+            <tr>
+                <td>ELEC 310</td>
+                <td>582.27</td>
+                <td>july@example.com</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
 </div>
 {{/default}}

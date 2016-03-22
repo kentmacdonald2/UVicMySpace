@@ -1,4 +1,18 @@
 {{#>default section=sections.home page=sections.home}}
+<<<<<<< HEAD
+<div style="min-height: 60vh;">
+    {{! This is the starter for a section page
+        -------------------------------------------------------
+        - The tag at the top brings in the default portions
+        - Data comes in from JSON files, please put all data/strings in the JSON files
+        - Keep the data organized, if you're adding financial data put it under "finances"
+    }}
+    {{! Access the page context with `page` (see globals.json)}}
+    <h2>{{page.title}}</h2>
+
+    {{! Access the page context with `user` (see amy.json)}}
+    <p>{{user.content}}</p>
+=======
 <div class="dashboard col-md-8">
     <h3>Dashboard</h3>
     <!-- tabs bottom -->
@@ -16,5 +30,6 @@
         </ul>
     </div>
     <!-- /tabs -->
+>>>>>>> hwkr/master
 </div>
 {{/default}}

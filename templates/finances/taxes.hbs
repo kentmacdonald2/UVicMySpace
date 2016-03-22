@@ -1,0 +1,201 @@
+{{#>default section=sections.finances page=sections.finances.subsections.taxes}}
+<div style="min-height: 60vh;">
+    {{! This is the starter for a section page
+        -------------------------------------------------------
+        - The tag at the top brings in the default portions
+        - Data comes in from JSON files, please put all data/strings in the JSON files
+        - Keep the data organized, if you're adding financial data put it under "finances"
+    }}
+    <div class="row col-md-12">
+        <h2>About Tax Forms</h2>
+        <p>When filing your annual income tax, you may be required to submit one or more of the available forms.
+        Check with your accountant or tax professional for more information</p>
+        <h1></h1>
+    </div>
+
+    {{! Access the page context with `page` (see globals.json)}}
+
+    <h2>Available Documents</h2>
+
+    <div class="col-md-4">
+        <h4><b>Proof of Enrollment</b></h4>
+        <table class="table table-condensed table-striped col-md-3">
+        <thead>
+        <tr>
+            <th class="col-md-10"></th>
+            <th class="col-md-1"></th>
+            <th class="col-md-1"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Spring 2015</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <i class="fa fa-download"></i></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print <i class="fa fa-print"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Summer 2015</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <i class="fa fa-download"></i></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print <i class="fa fa-print"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Spring 2016</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <i class="fa fa-download"></i></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print <i class="fa fa-print"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Summer 2016</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <i class="fa fa-download"></i></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print <i class="fa fa-print"></i></button>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+    </div>
+
+
+
+    {{!T2202A Tax Form}}
+    <div class="col-md-4">
+        <h4><b>T2202A Form</b></h4>
+        <table class="table table-condensed table-striped col-md-3">
+        <thead>
+        <tr>
+            <th class="col-md-10"></th>
+            <th class="col-md-1"></th>
+            <th class="col-md-1"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Spring 2015</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <i class="fa fa-download"></i></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print <i class="fa fa-print"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Summer 2015</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <i class="fa fa-download"></i></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print <i class="fa fa-print"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Spring 2016</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <i class="fa fa-download"></i></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print <i class="fa fa-print"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Summer 2016</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <i class="fa fa-download"></i></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print <i class="fa fa-print"></i></button>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+    </div>
+
+
+
+
+    {{!T4 Tax Form}}
+    <div class="col-md-4">
+        <h4><b>T4 Form</b></h4>
+        <table class="table table-condensed table-striped col-md-3">
+        <thead>
+        <tr>
+            <th class="col-md-10"></th>
+            <th class="col-md-1"></th>
+            <th class="col-md-1"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Spring 2015</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <i class="fa fa-download"></i></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print <i class="fa fa-print"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Summer 2015</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <i class="fa fa-download"></i></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print <i class="fa fa-print"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Spring 2016</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <i class="fa fa-download"></i></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print <i class="fa fa-print"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Summer 2016</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <i class="fa fa-download"></i></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print <i class="fa fa-print"></i></button>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+    </div>
+
+
+
+
+</div>
+
+
+    {{! Access the page context with `user` (see amy.json)
+    <p>{{user.content}}{{!</p>}}
+
+
+
+
+    {{!Print Script}}
+    <script>
+        function printFunction() {
+            window.print();
+        }
+    </script>
+{{/default}}

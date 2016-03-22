@@ -6,9 +6,91 @@
         - Data comes in from JSON files, please put all data/strings in the JSON files
         - Keep the data organized, if you're adding financial data put it under "finances"
     }}
+<div>
+    <div class="col-xs-6">
+    <div class="btn-group">
+        <div align="left">
+            <button class="btn">Balances</button>
+            <button class="btn">Awards</button>
+            <button class="btn">Tax Slips</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-xs-6">
+        <div align="right">
+            <button type="button" class="btn btn-default">Print</button>
+        </div>
+    </div>
+</div>
+
     {{! Access the page context with `page` (see globals.json)}}
-    <h2>{{page.title}}</h2>
+
     {{! Access the page context with `user` (see amy.json)}}
     <p>{{user.content}}</p>
+    <h3>{{user.classes}}</h3>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <h2 class="sub-header">Spring 2016</h2>
+            <p>Semester Balance: $0.00</p>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th class="col-md-3">Courses</th>
+                    <th class="col-md-9">Amount</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{user.class1}}</td>
+                    <td>582.27</td>
+                </tr>
+                <tr>
+                    <td>CSC 226</td>
+                    <td>582.27</td>
+                </tr>
+                <tr>
+                    <td>ELEC 310</td>
+                    <td>582.27</td>
+                </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <div class="col-xs-6">
+        <h2 class="sub-header">Balance</h2>
+        <p>Current Balance: $0.00</p>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th class="col-md-3">Semester</th>
+                <th class="col-md-9">Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Spring 2016</td>
+                <td>$3,500</td>
+            </tr>
+            <tr>
+                <td>Fall 2015</td>
+                <td>$3,500</td>
+            </tr>
+            <tr>
+                <td>Summer 2015</td>
+                <td>$2,750</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
 </div>
+
+</div>
+
+
 {{/default}}
