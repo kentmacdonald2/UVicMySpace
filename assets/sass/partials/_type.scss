@@ -98,6 +98,9 @@ mark,
 .text-uppercase      { text-transform: uppercase; }
 .text-capitalize     { text-transform: capitalize; }
 
+// Emphasis
+.text-bold           { font-weight: bold; }
+
 // Contextual colors
 .text-muted {
   color: $text-muted;

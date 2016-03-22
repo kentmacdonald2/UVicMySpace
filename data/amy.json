@@ -2,57 +2,117 @@
   "user": {
     "path": "amy/",
     "content": "This is Amy's content!",
-    "financeList" : "Some 400 - $99.00",
-    "class1" : "SENG 310",
-    "class2" : "ELEC 427",
-    "class3" : "CSC 226",
-    "class4" : "PSYC 345A",
-    "class5" : "SENG 401",
-    "price1" : "$547.00",
-    "price2" : "$547.00",
-    "price3" : "$547.00",
-    "price4" : "$547.00",
-    "price5" : "$547.00",
-    "records": {
-      "overall_GPA":7,
-      "grades": [
+    "finances": {
+      "balances": [
         {
           "semester": "Spring 2016",
-          "semester_GPA": 7.8,
-          "courses": [
+          "total_charges": 2968.95,
+          "payments": 2331.83,
+          "due": 637.12,
+          "charges": [
             {
-              "code": "CSC",
-              "number": 226,
-              "letter": "A-",
-              "percent": 82
+              "title": "Courses",
+              "total_amount": 2735.00,
+              "items": [
+                {
+                  "item": "CSC 226",
+                  "amount": 547.00
+                },
+                {
+                  "item": "MATH 122",
+                  "amount": 547.00
+                },
+                {
+                  "item": "SENG 310",
+                  "amount": 547.00
+                },
+                {
+                  "item": "SENG 265",
+                  "amount": 547.00
+                },
+                {
+                  "item": "ELEC 310",
+                  "amount": 547.00
+                }
+              ]
             },
             {
-              "code": "MATH",
-              "number": 201,
-              "letter": "B-",
-              "percent": 71
+              "title": "Fees",
+              "total_amount": 233.95,
+              "items": [
+                {
+                  "item": "UVic Athletics",
+                  "amount": 82.10
+                },
+                {
+                  "item": "Bus Pass",
+                  "amount": 81.00
+                },
+                {
+                  "item": "UVSS Student Membership",
+                  "amount": 70.85
+                }
+              ]
             }
           ]
         },
         {
           "semester": "Fall 2015",
-          "semester_GPA": 6.8,
-          "courses": [
-            {
-              "code": "CSC",
-              "number": 225,
-              "letter": "A",
-              "percent": 87
-            },
-            {
-              "code": "MATH",
-              "number": 101,
-              "letter": "B",
-              "percent": 75
-            }
-          ]
+          "total_charges": 3617.23,
+          "payments": 3617.23
+        },
+        {
+          "semester": "Spring 2015",
+          "total_charges": 2421.95,
+          "payments": 2421.95
+        },
+        {
+          "semester": "Fall 2014",
+          "total_charges": 3312.67,
+          "payments": 3312.67
         }
       ]
     }
+  },
+  "records": {
+    "overall_GPA": 7,
+    "grades": [
+      {
+        "semester": "Spring 2016",
+        "semester_GPA": 7.8,
+        "courses": [
+          {
+            "code": "CSC",
+            "number": 226,
+            "letter": "A-",
+            "percent": 82
+          },
+          {
+            "code": "MATH",
+            "number": 201,
+            "letter": "B-",
+            "percent": 71
+          }
+        ]
+      },
+      {
+        "semester": "Fall 2015",
+        "semester_GPA": 6.8,
+        "courses": [
+          {
+            "code": "CSC",
+            "number": 225,
+            "letter": "A",
+            "percent": 87
+          },
+          {
+            "code": "MATH",
+            "number": 101,
+            "letter": "B",
+            "percent": 75
+          }
+        ]
+      }
+    ]
   }
 }
