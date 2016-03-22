@@ -1,0 +1,184 @@
+{{#>default section=sections.finances page=sections.finances.subsections.account}}
+<div style="min-height: 60vh;">
+    {{! This is the starter for a section page
+        -------------------------------------------------------
+        - The tag at the top brings in the default portions
+        - Data comes in from JSON files, please put all data/strings in the JSON files
+        - Keep the data organized, if you're adding financial data put it under "finances"
+    }}
+
+
+    {{! Access the page context with `page` (see globals.json)}}
+    <h2>Proof of Enrollment</h2>
+
+    <table class="table table-condensed table-striped col-md-3">
+        <thead>
+        <tr>
+            <th class="col-md-2">Semester</th>
+            <th class="col-md-1"></th>
+            <th class="col-md-8"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Spring 2015</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Summer 2015</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Spring 2016</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Summer 2016</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
+    <h2>T2202A Tax Form</h2>
+    {{!T2202A Tax Form}}
+    <table class="table table-condensed table-striped col-md-3">
+        <thead>
+        <tr>
+            <th class="col-md-2">Semester</th>
+            <th class="col-md-1"></th>
+            <th class="col-md-8"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Spring 2015</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Summer 2015</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Spring 2016</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Summer 2016</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+    <h2>T4A/T4 Tax Form</h2>
+    {{!T2202A Tax Form}}
+    <table class="table table-condensed table-striped col-md-3">
+        <thead>
+        <tr>
+            <th class="col-md-2">Semester</th>
+            <th class="col-md-1"></th>
+            <th class="col-md-8"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Spring 2015</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Summer 2015</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Spring 2016</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Summer 2016</td>
+            <td>
+                <a href="#" class="btn btn-info">Download <span class="glyphicon glyphicon-download"></span></a>
+            </td>
+            <td>
+                <button type="button" onclick="printFunction()" class="btn btn-primary">Print</button>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+</div>
+
+
+    {{! Access the page context with `user` (see amy.json)
+    <p>{{user.content}}{{!</p>}}
+
+
+
+
+    {{!Print Script}}
+    <script>
+        function printFunction() {
+            window.print();
+        }
+    </script>
+{{/default}}
