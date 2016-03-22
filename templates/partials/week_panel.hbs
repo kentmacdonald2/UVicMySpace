@@ -2,6 +2,25 @@
     -------------------------------------------------------
     - It exists in the context of "Week"
 }}
-<p>
-    {{content}}
-</p>
+<h4>{{title_long}}</h4>
+<div class="panel panel-default timetable">
+    <!-- Table -->
+    <table class="table table-bordered table-hover" width="100%">
+        <thead>
+            <tr>
+                <th width="10%"><i class="fa fa-clock-o"></i></th>{{#each days}}
+                <th width="18%">{{this}}</th>{{/each}}
+            </tr>
+        </thead>{{log (list_times times.start times.end)}}
+        <tbody>{{#each (list_times times.start times.end)}}
+        <tr>
+            <th rowspan="2">{{to12hour this}}:00</th>{{#each ../days}}
+            <td></td>{{/each}}
+        </tr>
+        <tr>
+        {{#each ../days}}
+            <td></td>{{/each}}
+        </tr>{{/each}}
+        </tbody>
+    </table>
+</div>
