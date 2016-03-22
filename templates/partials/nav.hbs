@@ -1,5 +1,28 @@
-<ul class="nav nav-tabs">{{#each sections}}
-    <li{{#if (equals this ../section)}} class="active"{{/if}}>
-        <a {{#unless (equals this ../section)}}href="/{{../base_url}}{{../user.path}}{{path}}{{lookup (lookup subsections start_page) "path"}}"{{/unless}}>{{title}}</a>
-    </li>{{/each}}
-</ul>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/{{base_url}}{{user.path}}{{sections.home.path}}">{{title}}</a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="nav-collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav">{{#each sections}}
+                <li{{#if (equals this ../section)}} class="active"{{/if}}>
+                    <a {{#unless (equals this ../section)}}href="/{{../base_url}}{{../user.path}}{{path}}{{lookup (lookup subsections start_page) "path"}}"{{/unless}}>{{title}}</a>
+                </li>{{/each}}
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search {{title}}">
+                </div>
+                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+</nav>
