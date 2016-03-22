@@ -18,3 +18,14 @@
     }
   }
 }
+
+.tabbable {
+  .panel {
+    margin-bottom: 0;
+    //border-radius: $border-radius-base $border-radius-base $border-radius-base 0;
+    & + .nav-tabs {
+      border: none;
+      margin: 0 2*$border-radius-base;
+    }
+  }
+}

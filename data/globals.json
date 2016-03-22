@@ -2,7 +2,25 @@
   "sections": {
     "home": {
       "title": "Home",
-      "path": ""
+      "path": "",
+      "active_panel": "week",
+      "panels": {
+        "week": {
+          "title": "Week",
+          "content": "Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.",
+          "template": "week_panel"
+        },
+        "grades": {
+          "title": "Grades",
+          "content": "Lorem",
+          "template": "week_panel"
+        },
+        "account": {
+          "title": "Account",
+          "content": "Lorem",
+          "template": "week_panel"
+        }
+      }
     },
     "courses": {
       "title": "Courses",
