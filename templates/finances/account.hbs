@@ -7,16 +7,9 @@
         - Keep the data organized, if you're adding financial data put it under "finances"
     }}
 
-
-    {{! Access the page context with `page` (see globals.json)
-    <h2>{{page.title}}{{!</h2>}}
-    {{! Access the page context with `user` (see amy.json)
-    <p>{{user.content}}{{!</p>}}
-
-
-
     {{!Start of the tables}}
     <div class="row">
+<<<<<<< HEAD
         <div class="col-xs-6">
             <h2 class="sub-header">Spring 2016
                 <div class=pull-right>
@@ -25,110 +18,89 @@
 
                             <button type="button" onclick="printFunction()" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <i class="fa fa-print"></i> Print <span class="caret"></span>
+=======
+        <div class="col-md-7">
+            {{#with user.finances.balances.[0]}}
+                <h3>Spring 2016
+                    <div class=pull-right>
+                        {{!Print Button}}
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                Print <i class="fa fa-print"></i> <span class="caret"></span>
+>>>>>>> hwkr/master
                             </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Summer 2013</a></li>
-                            <li><a href="#">Fall 2013</a></li>
-                            <li><a href="#">Spring 2014</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">All</a></li>
-                        </ul>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">All Semesters</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Summer 2013</a></li>
+                                <li><a href="#">Fall 2013</a></li>
+                                <li><a href="#">Spring 2014</a></li>
+                            </ul>
+                        </div>
                     </div>
-                 </div>
-
-
-
-            </h2>
-            <p>Semester Balance: $0.00</p>
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th class="col-md-3">Courses</th>
-                    <th class="col-md-3">Amount</th>
-                    <th class="col-md-3">Paid</th>
-                    <th class="col-md-3 ">Due</th>
-
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>{{user.class1}}</td>
-                    <td>{{user.price1}}</td>
-                    <td>$0.00</td>
-                    <td class="danger">{{user.price1}}</td>
-                </tr>
-                <tr>
-                    <td>{{user.class2}}</td>
-                    <td>{{user.price2}}</td>
-                    <td>{{user.price2}}</td>
-                    <td class="success">$0.00</td>
-                </tr>
-                <tr>
-                    <td>{{user.class3}}</td>
-                    <td>{{user.price3}}</td>
-                    <td>{{user.price3}}</td>
-                    <td class="success">$0.00</td>
-                </tr>
-                <tr>
-                    <td>{{user.class4}}</td>
-                    <td>{{user.price4}}</td>
-                    <td>{{user.price4}}</td>
-                    <td class="success">$0.00</td>
-                </tr>
-                <tr>
-                    <td>{{user.class5}}</td>
-                    <td>{{user.price5}}</td>
-                    <td>{{user.price5}}</td>
-                    <td class="success">$0.00</td>
-                </tr>
-                </tbody>
-            </table>
+                </h3>
+                <p>&nbsp;</p>
+                <div class="panel panel-default">
+                    <table class="table table-hover" width="100%">
+                        <thead>
+                        <tr>
+                            <th width="80%">Description</th>
+                            <th width="20%">Amount</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{#each charges}}
+                            <tr>
+                                <th>{{title}}</th>
+                                <th>${{formatCurrency total_amount}}</th>
+                            </tr>
+                            <tr>{{#each items}}
+                                    <td style="padding-left: 2em;">{{item}}</td>
+                                    <td>${{formatCurrency amount}}</td>
+                                </tr>{{/each}}{{/each}}
+                        <tr>
+                            <th>Total</th>
+                            <th>${{formatCurrency total_charges}}</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            {{/with}}
         </div>
 
-        <div class="col-xs-6">
-            <h2 class="sub-header">Balance
+        <div class="col-md-5">
+            <h3>Balance
                 <div class=pull-right>
+<<<<<<< HEAD
                     <a href="#" class="btn btn-info"><i class="fa fa-credit-card"></i> Pay Now</a>
+=======
+                    <a href="#" class="btn btn-primary">Pay Now <i class="fa fa-credit-card"></i></a>
+>>>>>>> hwkr/master
                 </div>
-            </h2>
+            </h3>
 
-
-
-
-
-            <p>Current Balance: $0.00</p>
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th class="col-md-3">Semester</th>
-                    <th class="col-md-3">Amount</th>
-                    <th class="col-md-3">Paid</th>
-                    <th class="col-md-3 ">Due</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Spring 2016</td>
-                    <td>$3,500</td>
-                    <td>$3,000</td>
-                    <td class = "danger">$500.00</td>
-
-                </tr>
-                <tr>
-                    <td>Fall 2015</td>
-                    <td>$3,500</td>
-                    <td>$3,500</td>
-                    <td class = "success">$0.00</td>
-                </tr>
-                <tr>
-                    <td>Summer 2015</td>
-                    <td>$2,750</td>
-                    <td>$2,750</td>
-                    <td class = "success">$0.00</td>
-                </tr>
-                </tbody>
-            </table>
-
+            <p>Current Balance: <span class="text-danger text-bold">$637.12</span></p>
+            <div class="panel panel-default">
+                <table class="table table-hover" width="100%">
+                    <thead>
+                    <tr>
+                        <th width="40%">Semester</th>
+                        <th width="20%">Charges</th>
+                        <th width="20%">Paid</th>
+                        <th width="20%">Due</th>
+                    </tr>
+                    </thead>
+                    <tbody>{{#each user.finances.balances}}
+                        <tr>
+                            <td>{{semester}}</td>
+                            <td>${{formatCurrency total_charges}}</td>
+                            <td>${{formatCurrency payments}}</td>
+                            <td class="{{#if due}}text-danger text-bold{{/if}}">${{formatCurrency due}}</td>
+                        </tr>{{/each}}
+                    </tbody>
+                </table>
+            </div>
 
         </div>
 
@@ -140,7 +112,5 @@
         </script>
 
 
-
-
-</div>
+    </div>
 {{/default}}

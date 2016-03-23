@@ -1,15 +1,226 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "user":
   {
     "path":"amy/",
     "content": "This is Amy's content!",
 =======
+=======
+>>>>>>> hwkr/master
   "user": {
     "path": "amy/",
-    "content": "This is Amy's content!",
+    "content": "Under construction... Awkward...",
+    "courses": {
+      "semesters":[
+        {
+          "semester": "Spring 2016",
+          "schedule": {
+            "monday":{
+              "8.5":{
+                "course": "csc226",
+                "type": "lecture",
+                "length": 1.5
+              },
+              "11.5":{
+                "course": "ceng460",
+                "type": "lecture",
+                "length": 1.5
+              },
+              "13.0":{
+                "course": "seng310",
+                "type": "lecture",
+                "length": 1.5
+              },
+              "14.5":{
+                "course": "csc226",
+                "type": "lab",
+                "length": 1.0
+              }
+            },
+            "tuesday":{
+              "10.5":{
+                "course": "elec310",
+                "type": "lecture",
+                "length": 1.0
+              },
+              "13.5":{
+                "course": "seng310",
+                "type": "lab",
+                "length": 2.0
+              },
+              "15.5":{
+                "course": "seng321",
+                "type": "lecture",
+                "length": 1.0
+              }
+            },
+            "wednesday":{
+              "10.5":{
+                "course": "elec310",
+                "type": "lecture",
+                "length": 1.0
+              },
+              "15.5":{
+                "course": "seng321",
+                "type": "lecture",
+                "length": 1.0
+              }
+            },
+            "thursday":{
+              "8.5":{
+                "course": "csc226",
+                "type": "lecture",
+                "length": 1.5
+              },
+              "11.5":{
+                "course": "ceng460",
+                "type": "lecture",
+                "length": 1.5
+              },
+              "13.0":{
+                "course": "seng310",
+                "type": "lecture",
+                "length": 1.5
+              },
+              "14.5":{
+                "course": "csc226",
+                "type": "lab",
+                "length": 1.0
+              }
+            },
+            "friday":{
+              "10.5":{
+                "course": "elec310",
+                "type": "lecture",
+                "length": 1.0
+              },
+              "15.5":{
+                "course": "seng321",
+                "type": "lecture",
+                "length": 1.0
+              }
+            }
+          },
+          "courses": {
+            "csc226": {
+              "code": "CSC",
+              "number": 226
+            },
+            "ceng460": {
+              "code": "CENG",
+              "number": 460
+            },
+            "seng310": {
+              "code": "SENG",
+              "number": 310
+            },
+            "seng321": {
+              "code": "SENG",
+              "number": 321
+            },
+            "elec310": {
+              "code": "ELEC",
+              "number": 310
+            }
+          }
+        }
+      ]
+    },
+    "finances": {
+      "balances": [
+        {
+          "semester": "Spring 2016",
+          "total_charges": 2968.95,
+          "payments": 2331.83,
+          "due": 637.12,
+          "charges": [
+            {
+              "title": "Courses",
+              "total_amount": 2735.00,
+              "items": [
+                {
+                  "item": "CSC 226",
+                  "amount": 547.00
+                },
+                {
+                  "item": "MATH 122",
+                  "amount": 547.00
+                },
+                {
+                  "item": "SENG 310",
+                  "amount": 547.00
+                },
+                {
+                  "item": "SENG 265",
+                  "amount": 547.00
+                },
+                {
+                  "item": "ELEC 310",
+                  "amount": 547.00
+                }
+              ]
+            },
+            {
+              "title": "Fees",
+              "total_amount": 233.95,
+              "items": [
+                {
+                  "item": "UVic Athletics",
+                  "amount": 82.10
+                },
+                {
+                  "item": "Bus Pass",
+                  "amount": 81.00
+                },
+                {
+                  "item": "UVSS Student Membership",
+                  "amount": 70.85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "semester": "Fall 2015",
+          "total_charges": 3617.23,
+          "payments": 3617.23
+        },
+        {
+          "semester": "Spring 2015",
+          "total_charges": 2421.95,
+          "payments": 2421.95
+        },
+        {
+          "semester": "Fall 2014",
+          "total_charges": 3312.67,
+          "payments": 3312.67
+        }
+      ],
+      "tax-slips": {
+        "t2202a": {
+          "title": "T2202A Form",
+          "years": [
+            2016,
+            2015
+          ]
+        },
+        "t4a": {
+          "title": "T4A Form",
+          "years": [
+            2016,
+            2015
+          ]
+        }
+      },
+      "awards": {
+        "apply": {
+
+        }
+      }
+    },
     "records": {
-      "overall_GPA":7,
+      "overall_GPA": 7,
       "grades": [
         {
           "semester": "Spring 2016",
@@ -49,6 +260,7 @@
         }
       ]
     }
+<<<<<<< HEAD
     "financeList" : "Some 400 - $99.00",
     "class1" : "SENG 310",
     "class2" : "ELEC 427",
@@ -60,6 +272,8 @@
     "price3" : "$547.00",
     "price4" : "$547.00",
     "price5" : "$547.00",
+>>>>>>> hwkr/master
+=======
 >>>>>>> hwkr/master
   }
 }

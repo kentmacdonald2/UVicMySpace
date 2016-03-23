@@ -1,5 +1,22 @@
-<ul class="nav nav-tabs">{{#each sections}}
-    <li{{#if (equals this ../section)}} class="active"{{/if}}>
-        <a {{#unless (equals this ../section)}}href="/{{../user.path}}{{path}}{{lookup (lookup subsections start_page) "path"}}"{{/unless}}>{{title}}</a>
-    </li>{{/each}}
-</ul>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand"><img alt="{{title}}" class="img-responsive" src="/{{base_url}}/assets/img/brand.svg"/></span>
+        </div>
+
+        <div class="navbar-collapse collapse" id="nav-collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav">{{#each sections}}
+                <li{{#if (equals this ../section)}} class="active"{{/if}}>
+                    <a {{#unless (equals this ../section)}}href="/{{../base_url}}{{../user.path}}{{path}}{{lookup (lookup subsections start_page) "path"}}"{{/unless}}>{{title}}</a>
+                </li>{{/each}}
+            </ul>
+        </div>
+    </div>
+</nav>

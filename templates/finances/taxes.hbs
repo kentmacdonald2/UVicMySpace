@@ -6,13 +6,15 @@
         - Data comes in from JSON files, please put all data/strings in the JSON files
         - Keep the data organized, if you're adding financial data put it under "finances"
     }}
-    <div class="row col-md-12">
-        <h2>About Tax Forms</h2>
-        <p>When filing your annual income tax, you may be required to submit one or more of the available forms.
-        Check with your accountant or tax professional for more information</p>
-        <h1></h1>
+    <div class="row">
+        <div class="col-md-8">
+            <h2>About Tax Forms</h2>
+            <p>When filing your annual income tax, you may be required to submit one or more of the available forms.
+                Check with your accountant or tax professional for more information.</p>
+        </div>
     </div>
 
+<<<<<<< HEAD
     {{! Access the page context with `page` (see globals.json)}}
 
     <h2>Available Documents</h2>
@@ -183,19 +185,42 @@
 
 
 
+=======
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Available Documents</h2>
+        </div>
+    </div>
+
+    <div class="row">{{#each user.finances.tax-slips}}
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">{{title}}</div>
+                <table class="table table-hover">
+                    <tbody>{{#each years}}
+                    <tr>
+                        <td><h4>{{this}} Tax Year</h4></td>
+                        <td class="text-right">
+                            <button type="button" onclick="printFunction()" class="btn btn-default">
+                                <i class="fa fa-print"></i> Print
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                <i class="fa fa-download"></i> Download
+                            </button>
+                        </td>
+                    </tr>{{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>{{/each}}
+    </div>
+
+>>>>>>> hwkr/master
 </div>
-
-
-    {{! Access the page context with `user` (see amy.json)
-    <p>{{user.content}}{{!</p>}}
-
-
-
-
-    {{!Print Script}}
-    <script>
-        function printFunction() {
-            window.print();
-        }
-    </script>
+{{!Print Script}}
+<script>
+    function printFunction() {
+        window.print();
+    }
+</script>
 {{/default}}

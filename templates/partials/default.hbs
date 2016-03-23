@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>{{page.title}}</title>
+    <title>{{title}} | {{page.title}}</title>
     {{> meta}}
     {{> imports}}
 </head>
@@ -12,19 +12,13 @@
 <div class="mypage">
     <div class="container">
         <div id="content">
-            <div class="panel with-nav-tabs panel-default">
-                <div class="panel-heading">
-                    {{> nav}}
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            {{> subnav}}
-                        </div>
-                    </div>
-                        {{> @partial-block }}
+            {{> nav}}
+            <div class="row">
+                <div class="col-xs-12">
+                    {{> subnav}}
                 </div>
             </div>
+            {{> @partial-block }}
         </div>
     </div>
 </div>

@@ -6,8 +6,8 @@ git config --global push.default simple # make git be quiet
 LAST_COMMIT="$(git rev-parse --short HEAD)"
 
 # clone the old gh pages
-git clone "https://${GH_TOKEN}@${GH_REF}" out/
-cd out/
+git clone "https://${GH_TOKEN}@${GH_REF}" UVicMySpace/
+cd UVicMySpace/
 git checkout gh-pages
 rm -rf *
 cd ../
@@ -15,7 +15,7 @@ cd ../
 # build the docs 
 grunt build
 
-cd out/
+cd UVicMySpace/
 
 # inside this git repo we'll pretend to be a new user
 git config user.name "Travis CI"
