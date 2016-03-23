@@ -4,7 +4,7 @@
     <!-- tabs bottom -->
     <div class="tabbable tabs-below">
         <div class="panel panel-default tab-content">{{#each page.panels}}
-            <div class="panel-body tab-pane{{#if (equals ../page.active_panel @key)}} active{{/if}}"
+            <div class="tab-pane{{#if (equals ../page.active_panel @key)}} active{{/if}}"
                  id="dashboard-{{@key}}">
                 {{>(lookup . "template")}}
             </div>{{/each}}

@@ -1,8 +1,9 @@
 .dashboard {
   .tabbable {
     .tab-content {
-      min-height: 50vh;
+
     }
+    margin-bottom: 2*$padding-large-vertical;
   }
 }
 
@@ -64,8 +65,11 @@ table.timetable {
   }
   // Bottom align for column headings
   > thead > tr > th {
+    color: $gray-light;
     vertical-align: bottom;
     border-bottom: 2px solid $table-border-color;
+    text-transform: uppercase;
+    font-size: $font-size-small;
   }
   // Remove top border from thead by default
   > caption + thead,

@@ -12,11 +12,11 @@
           "title_long": "Your Week",
           "template": "week_panel",
           "days": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
           ],
           "times": {
             "start": 8,

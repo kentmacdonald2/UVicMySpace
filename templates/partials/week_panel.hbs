@@ -2,25 +2,22 @@
     -------------------------------------------------------
     - It exists in the context of "Week"
 }}
-<h4>{{title_long}}</h4>
-<div class="panel panel-default">
-    <!-- Table -->
-    <table class="timetable" width="100%">
-        <thead>
-            <tr>
-                <th width="10%"><i class="fa fa-clock-o"></i></th>{{#each days}}
-                <th width="18%">{{this}}</th>{{/each}}
-            </tr>
-        </thead>
-        <tbody>{{#each (list_times times.start times.end)}}
-        <tr class="half-hour">
-            <th class="time" rowspan="2">{{to12hour this}}</th>{{#each ../days}}
-            <td><div class="fill"></div></td>{{/each}}
-        </tr>
+<!-- Table -->
+<table class="timetable" width="100%">
+    <thead>
         <tr>
-        {{#each ../days}}
-            <td><div class="fill"></div></td>{{/each}}
-        </tr>{{/each}}
-        </tbody>
-    </table>
-</div>
+            <th width="10%"><i class="fa fa-clock-o"></i></th>{{#each days}}
+            <th width="18%">{{this}}</th>{{/each}}
+        </tr>
+    </thead>
+    <tbody>{{#each (list_times times.start times.end)}}
+    <tr class="half-hour">
+        <th class="time" rowspan="2">{{to12hour this}}</th>{{#each ../days}}
+        <td><div class="fill"></div></td>{{/each}}
+    </tr>
+    <tr>
+    {{#each ../days}}
+        <td><div class="fill"></div></td>{{/each}}
+    </tr>{{/each}}
+    </tbody>
+</table>
