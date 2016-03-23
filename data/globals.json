@@ -11,13 +11,28 @@
           "title": "Week",
           "title_long": "Your Week",
           "template": "week_panel",
-          "days": [
-            "Mon",
-            "Tue",
-            "Wed",
-            "Thu",
-            "Fri"
-          ],
+          "days": {
+            "monday": {
+              "full": "Monday",
+              "short": "Mon"
+            },
+            "tuesday": {
+              "full": "Tuesday",
+              "short": "Tue"
+            },
+            "wednesday": {
+              "full": "Wednesday",
+              "short": "Wed"
+            },
+            "thursday": {
+              "full": "Thursday",
+              "short": "Thu"
+            },
+            "friday": {
+              "full": "Friday",
+              "short": "Fri"
+            }
+          },
           "times": {
             "start": 8,
             "end": 17

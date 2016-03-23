@@ -2,6 +2,122 @@
   "user": {
     "path": "amy/",
     "content": "Under construction... Awkward...",
+    "courses": {
+      "semesters":[
+        {
+          "semester": "Spring 2016",
+          "schedule": {
+            "monday":{
+              "8.5":{
+                "course": "csc226",
+                "type": "lecture",
+                "length": 1.5
+              },
+              "11.5":{
+                "course": "ceng460",
+                "type": "lecture",
+                "length": 1.5
+              },
+              "13.0":{
+                "course": "seng310",
+                "type": "lecture",
+                "length": 1.5
+              },
+              "14.5":{
+                "course": "csc226",
+                "type": "lab",
+                "length": 1.0
+              }
+            },
+            "tuesday":{
+              "10.5":{
+                "course": "elec310",
+                "type": "lecture",
+                "length": 1.0
+              },
+              "13.5":{
+                "course": "seng310",
+                "type": "lab",
+                "length": 2.0
+              },
+              "15.5":{
+                "course": "seng321",
+                "type": "lecture",
+                "length": 1.0
+              }
+            },
+            "wednesday":{
+              "10.5":{
+                "course": "elec310",
+                "type": "lecture",
+                "length": 1.0
+              },
+              "15.5":{
+                "course": "seng321",
+                "type": "lecture",
+                "length": 1.0
+              }
+            },
+            "thursday":{
+              "8.5":{
+                "course": "csc226",
+                "type": "lecture",
+                "length": 1.5
+              },
+              "11.5":{
+                "course": "ceng460",
+                "type": "lecture",
+                "length": 1.5
+              },
+              "13.0":{
+                "course": "seng310",
+                "type": "lecture",
+                "length": 1.5
+              },
+              "14.5":{
+                "course": "csc226",
+                "type": "lab",
+                "length": 1.0
+              }
+            },
+            "friday":{
+              "10.5":{
+                "course": "elec310",
+                "type": "lecture",
+                "length": 1.0
+              },
+              "15.5":{
+                "course": "seng321",
+                "type": "lecture",
+                "length": 1.0
+              }
+            }
+          },
+          "courses": {
+            "csc226": {
+              "code": "CSC",
+              "number": 226
+            },
+            "ceng460": {
+              "code": "CENG",
+              "number": 460
+            },
+            "seng310": {
+              "code": "SENG",
+              "number": 310
+            },
+            "seng321": {
+              "code": "SENG",
+              "number": 321
+            },
+            "elec310": {
+              "code": "ELEC",
+              "number": 310
+            }
+          }
+        }
+      ]
+    },
     "finances": {
       "balances": [
         {

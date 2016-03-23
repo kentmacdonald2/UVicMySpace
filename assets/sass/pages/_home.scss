@@ -24,17 +24,26 @@ table.timetable {
         vertical-align: top;
         text-align: center;
         > .fill {
-          min-height: 2*$table-cell-padding;
+          height: 2*$table-cell-padding;
         }
         > .event {
           position: absolute;
-          width: 100%;
-          height: 63px;
-          margin: 1px 0;
+          width: 98%;
+          margin: auto 1px;
+          height: 2*$table-cell-padding - 2;
+          padding: $padding-base-vertical;
           border-radius: $border-radius-base;
-          border: solid 1px $gray-light;
+          color: $gray;
           background: $gray-lighter;
           text-align: left;
+          overflow: hidden;
+          .event-title {
+            font-size: $font-size-small;
+            font-weight: bold;
+            white-space: nowrap;
+            padding: 0;
+            margin: 0;
+          }
         }
       }
     }
@@ -49,15 +58,17 @@ table.timetable {
         color: darken($table-border-color, 10%);
         font-size: $font-size-small;
         text-align: right;
+        white-space: nowrap;
+        text-overflow: clip;
       }
     }
-    > tr {
+    > tr.half-hour {
       > td {
         border-top: 1px solid $table-border-color;
         border-bottom: 1px dotted $table-border-color;
       }
     }
-    > tr.half-hour {
+    > tr {
       > td {
         border: none;
       }
