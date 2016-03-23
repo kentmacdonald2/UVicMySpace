@@ -71,7 +71,23 @@
           "total_charges": 3312.67,
           "payments": 3312.67
         }
-      ]
+      ],
+      "tax-slips": {
+        "t2202a": {
+          "title": "T2202A Form",
+          "years": [
+            2016,
+            2015
+          ]
+        },
+        "t4a": {
+          "title": "T4A Form",
+          "years": [
+            2016,
+            2015
+          ]
+        }
+      }
     },
     "records": {
       "overall_GPA": 7,
