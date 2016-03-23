@@ -17,12 +17,6 @@
                     <a {{#unless (equals this ../section)}}href="/{{../base_url}}{{../user.path}}{{path}}{{lookup (lookup subsections start_page) "path"}}"{{/unless}}>{{title}}</a>
                 </li>{{/each}}
             </ul>
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search {{title}}">
-                </div>
-                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-            </form>
         </div>
     </div>
 </nav>
