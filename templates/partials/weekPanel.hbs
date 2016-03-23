@@ -1,6 +1,7 @@
-{{! This the template for the Week Panel on the homepage
+{{! This is the template for the Week Panel
     -------------------------------------------------------
     - It exists in the context of "Week"
+    - Used on the Home Page
 }}
 <!-- Table -->
 <table class="timetable" width="100%">
@@ -14,24 +15,17 @@
         <tr>
             <th class="time" rowspan="2">{{to12hour this}}</th>{{#each ../days}}
             <td>{{#with (lookup (lookup ../../user.courses.semesters.[0].schedule @key) (add ../this ".0"))}}
-                <div class="event" style="height: {{add (add (multiply length 32) (multiply length 2)) -5}}px">
-                    <h4 class="event-title">
-                        {{#with (lookup ../../../user.courses.semesters.[0].courses course)}}{{code}} {{number}}{{/with}}
-                    </h4>
-                </div>
+                {{>timetableEvent course=(lookup ../../../user.courses.semesters.[0].courses course)}}
                 {{else}}
                 <div class="fill"></div>{{/with}}
             </td>{{/each}}
         </tr>
         <tr class="half-hour">{{#each ../days}}
             <td>{{#with (lookup (lookup ../../user.courses.semesters.[0].schedule @key) (add ../this ".5"))}}
-                <div class="event" style="height: {{add (add (multiply length 32) (multiply length 2)) -5}}px">
-                    <h4 class="event-title">
-                        {{#with (lookup ../../../user.courses.semesters.[0].courses course)}}{{code}} {{number}}{{/with}}
-                    </h4>
-                </div>
-            {{else}}
-                <div class="fill"></div>{{/with}}{{/each}}
+                {{>timetableEvent course=(lookup ../../../user.courses.semesters.[0].courses course)}}
+                {{else}}
+                <div class="fill"></div>{{/with}}
+            </td>{{/each}}
         </tr>{{/each}}
     </tbody>
 </table>

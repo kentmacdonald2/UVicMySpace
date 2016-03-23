@@ -1,0 +1,10 @@
+{{! This is the template for a timetable event
+    -------------------------------------------------------
+    - It exists in the context of a schedule event
+    - It is used in the weekPanel partial
+}}
+<div class="event" style="height: {{add (add (multiply length 32) (multiply length 2)) -5}}px">
+    <h4 class="event-title">
+        {{#with course}}{{code}} {{number}}{{/with}}
+    </h4>
+</div>
