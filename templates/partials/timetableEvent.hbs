@@ -6,5 +6,11 @@
 <div class="event" style="height: {{add (add (multiply length 32) (multiply length 2)) -5}}px">
     <h4 class="event-title">
         {{#with course}}{{code}} {{number}}{{/with}}
+        {{#if (equals type "lecture")}}
+            <i class="fa fa-book fa-pull-right text-muted" data-toggle="tooltip" title="Hooray!"></i>
+        {{/if}}
+        {{#if (equals type "lab")}}
+            <i class="fa fa-flask fa-pull-right text-muted" data-toggle="tooltip" title="Hooray!"></i>
+        {{/if}}
     </h4>
 </div>
