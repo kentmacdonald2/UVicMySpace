@@ -10,7 +10,7 @@
         <th width="18%">{{short}}</th>{{/each}}
     </tr>
     </thead>
-    <tbody>{{#each (list_times times.start times.end)}}
+    <tbody>{{#each (listTimes times.start times.end)}}
         <tr>
             <th class="time" rowspan="2">{{to12hour this}}</th>{{#each ../days}}
             <td>{{#with (lookup (lookup ../../user.courses.semesters.[0].schedule @key) (add ../this ".0"))}}
