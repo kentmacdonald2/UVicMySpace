@@ -11,85 +11,85 @@
               "8.5":{
                 "course": "csc226",
                 "type": "lecture",
-                "length": 1.5
+                "length": 80
               },
               "11.5":{
                 "course": "ceng460",
                 "type": "lecture",
-                "length": 1.5
+                "length": 80
               },
               "13.0":{
                 "course": "seng310",
                 "type": "lecture",
-                "length": 1.5
+                "length": 80
               },
               "14.5":{
                 "course": "csc226",
                 "type": "lab",
-                "length": 1.0
+                "length": 50
               }
             },
             "tuesday":{
               "10.5":{
                 "course": "elec310",
                 "type": "lecture",
-                "length": 1.0
+                "length": 50
               },
               "13.5":{
                 "course": "seng310",
                 "type": "lab",
-                "length": 2.0
+                "length": 110
               },
               "15.5":{
                 "course": "seng321",
                 "type": "lecture",
-                "length": 1.0
+                "length": 50
               }
             },
             "wednesday":{
               "10.5":{
                 "course": "elec310",
                 "type": "lecture",
-                "length": 1.0
+                "length": 50
               },
               "15.5":{
                 "course": "seng321",
                 "type": "lecture",
-                "length": 1.0
+                "length": 50
               }
             },
             "thursday":{
               "8.5":{
                 "course": "csc226",
                 "type": "lecture",
-                "length": 1.5
+                "length": 80
               },
               "11.5":{
                 "course": "ceng460",
                 "type": "lecture",
-                "length": 1.5
+                "length": 80
               },
               "13.0":{
                 "course": "seng310",
                 "type": "lecture",
-                "length": 1.5
+                "length": 80
               },
               "14.5":{
                 "course": "csc226",
                 "type": "lab",
-                "length": 1.0
+                "length": 50
               }
             },
             "friday":{
               "10.5":{
                 "course": "elec310",
                 "type": "lecture",
-                "length": 1.0
+                "length": 50
               },
               "15.5":{
                 "course": "seng321",
                 "type": "lecture",
-                "length": 1.0
+                "length": 50
               }
             }
           },
