@@ -12,16 +12,19 @@
     </tr>
     </thead>
     <tbody>{{#each (listTimes times.start times.end)}}
-        <tr>
+        {{! Half Hour }}
+        <tr class="half-hour">
             <th class="time" rowspan="2">{{to12hour this}}</th>{{#each ../days}}
-            <td>{{#with (lookup (lookup ../../user.courses.semesters.[0].schedule @key) (add ../this ".0"))}}
+            {{log (toFixed (add ../this -0.5) 1)}}
+            <td>{{#with (lookup (lookup ../../user.courses.semesters.[0].schedule @key) (toFixed (add ../this -0.5) 1))}}
                 {{>timetableEvent course=(lookup ../../../user.courses.semesters.[0].courses course)}}
                 {{else}}
                 <div class="fill"></div>{{/with}}
             </td>{{/each}}
         </tr>
-        <tr class="half-hour">{{#each ../days}}
-            <td>{{#with (lookup (lookup ../../user.courses.semesters.[0].schedule @key) (add ../this ".5"))}}
+        {{! Hour }}
+        <tr>{{#each ../days}}
+            <td>{{#with (lookup (lookup ../../user.courses.semesters.[0].schedule @key) (toFixed ../this 1))}}
                 {{>timetableEvent course=(lookup ../../../user.courses.semesters.[0].courses course)}}
                 {{else}}
                 <div class="fill"></div>{{/with}}

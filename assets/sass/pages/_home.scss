@@ -78,13 +78,13 @@ table.timetable {
     }
     > tr.half-hour {
       > td {
-        border-top: 1px solid $table-border-color;
-        border-bottom: 1px dotted $table-border-color;
+        border: none;
       }
     }
     > tr {
       > td {
-        border: none;
+        border-top: 1px solid $table-border-color;
+        border-bottom: 1px dotted $table-border-color;
       }
     }
   }
