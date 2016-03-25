@@ -48,7 +48,7 @@
               "16.5":{
                 "course": "seng321",
                 "type": "lab",
-                "length": 90
+                "length": 80
               }
             },
             "wednesday":{
@@ -82,7 +82,7 @@
               "16.5":{
                 "course": "seng321",
                 "type": "lab",
-                "length": 90
+                "length": 80
               }
             },
             "friday":{
