@@ -3,14 +3,14 @@
     - It exists in the context of a schedule event
     - It is used in the weekPanel partial
 }}
-<div class="event" style="height: {{multiply length 0.5625}}px">
+<div class="event event-{{course.class}}" style="height: {{multiply length 0.5625}}px">
     <h4 class="event-title">
         {{#with course}}{{code}} {{number}}{{/with}}
         {{#if (equals type "lecture")}}
-            <i class="fa fa-book fa-pull-right text-muted" data-toggle="tooltip" title="Hooray!"></i>
+            <i class="fa fa-book fa-pull-right" data-toggle="tooltip" title="Hooray!"></i>
         {{/if}}
         {{#if (equals type "lab")}}
-            <i class="fa fa-flask fa-pull-right text-muted" data-toggle="tooltip" title="Hooray!"></i>
+            <i class="fa fa-flask fa-pull-right" data-toggle="tooltip" title="Hooray!"></i>
         {{/if}}
     </h4>
 </div>

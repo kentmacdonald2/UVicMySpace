@@ -44,6 +44,11 @@
                 "course": "seng321",
                 "type": "lecture",
                 "length": 50
+              },
+              "16.5":{
+                "course": "seng321",
+                "type": "lab",
+                "length": 90
               }
             },
             "wednesday":{
@@ -74,10 +79,10 @@
                 "type": "lecture",
                 "length": 80
               },
-              "14.5":{
-                "course": "csc226",
+              "16.5":{
+                "course": "seng321",
                 "type": "lab",
-                "length": 50
+                "length": 90
               }
             },
             "friday":{
@@ -96,23 +101,28 @@
           "courses": {
             "csc226": {
               "code": "CSC",
-              "number": 226
+              "number": 226,
+              "class": "course-1"
             },
             "ceng460": {
               "code": "CENG",
-              "number": 460
+              "number": 460,
+              "class": "course-2"
             },
             "seng310": {
               "code": "SENG",
-              "number": 310
+              "number": 310,
+              "class": "course-3"
             },
             "seng321": {
               "code": "SENG",
-              "number": 321
+              "number": 321,
+              "class": "course-4"
             },
             "elec310": {
               "code": "ELEC",
-              "number": 310
+              "number": 310,
+              "class": "course-5"
             }
           }
         }
