@@ -122,5 +122,11 @@
         }
       }
     }
+  },
+  "environment": {
+    "today": {
+      "full": "March 22, 2016",
+      "day": "tuesday"
+    }
   }
 }

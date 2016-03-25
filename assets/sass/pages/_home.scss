@@ -22,21 +22,30 @@ table.timetable {
         line-height: $line-height-base;
         position: relative;
         vertical-align: top;
-        text-align: center;
+
+        &.today {
+          background: $table-bg-hover;
+        }
+
         > .fill {
           height: 2*$table-cell-padding;
         }
+
         > .event {
-          position: absolute;
-          width: 95%;
-          margin: auto 1px;
+          width: 96%;
           height: 2*$table-cell-padding - 2;
+          margin: 0 2%;
+
           padding: $padding-base-vertical;
           border-radius: $border-radius-base;
           color: $gray;
           background: $gray-lighter;
+
           text-align: left;
+          position: absolute;
           overflow: hidden;
+          z-index: 1;
+
           .event-title {
             font-size: $font-size-small;
             font-weight: bold;
@@ -62,8 +71,7 @@ table.timetable {
       }
     }
     > tr {
-      > th
-      {
+      > th {
         padding: $table-cell-padding;
       }
     }
