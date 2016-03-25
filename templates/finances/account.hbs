@@ -42,15 +42,15 @@
                         {{#each charges}}
                             <tr>
                                 <th>{{title}}</th>
-                                <th>${{formatCurrency total_amount}}</th>
+                                <th>${{toFixed total_amount 2}}</th>
                             </tr>
                             <tr>{{#each items}}
                                     <td style="padding-left: 2em;">{{item}}</td>
-                                    <td>${{formatCurrency amount}}</td>
+                                    <td>${{toFixed amount 2}}</td>
                                 </tr>{{/each}}{{/each}}
                         <tr>
                             <th>Total</th>
-                            <th>${{formatCurrency total_charges}}</th>
+                            <th>${{toFixed total_charges 2}}</th>
                         </tr>
                         </tbody>
                     </table>
@@ -79,9 +79,9 @@
                     <tbody>{{#each user.finances.balances}}
                         <tr>
                             <td>{{semester}}</td>
-                            <td>${{formatCurrency total_charges}}</td>
-                            <td>${{formatCurrency payments}}</td>
-                            <td class="{{#if due}}text-danger text-bold{{/if}}">${{formatCurrency due}}</td>
+                            <td>${{toFixed total_charges 2}}</td>
+                            <td>${{toFixed payments 2}}</td>
+                            <td class="{{#if due}}text-danger text-bold{{/if}}">${{toFixed due 2}}</td>
                         </tr>{{/each}}
                     </tbody>
                 </table>
