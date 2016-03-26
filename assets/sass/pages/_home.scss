@@ -22,21 +22,30 @@ table.timetable {
         line-height: $line-height-base;
         position: relative;
         vertical-align: top;
-        text-align: center;
+
+        &.today {
+          background: $table-bg-hover;
+        }
+
         > .fill {
           height: 2*$table-cell-padding;
         }
+
         > .event {
-          position: absolute;
-          width: 95%;
-          margin: auto 1px;
+          width: 96%;
           height: 2*$table-cell-padding - 2;
+          margin: 0 2%;
+
           padding: $padding-base-vertical;
           border-radius: $border-radius-base;
           color: $gray;
           background: $gray-lighter;
+
           text-align: left;
+          position: absolute;
           overflow: hidden;
+          z-index: 1;
+
           .event-title {
             font-size: $font-size-small;
             font-weight: bold;
@@ -44,12 +53,25 @@ table.timetable {
             padding: 0;
             margin: 0;
           }
+          $course-colors:
+                  #1f77b4
+                  #ff7f0e
+                  #2ca02c
+                  #d62728
+                  #7e55a3
+                  #a6538a
+                  #bcbd22;
+          @for $i from 1 through length($course-colors)-1 {
+            &.event-course-#{$i} {
+              color:      darken(nth($course-colors, $i), 10%);
+              background: lighten(nth($course-colors, $i), 40%);
+            }
+          }
         }
       }
     }
     > tr {
-      > th
-      {
+      > th {
         padding: $table-cell-padding;
       }
     }
@@ -64,13 +86,13 @@ table.timetable {
     }
     > tr.half-hour {
       > td {
-        border-top: 1px solid $table-border-color;
-        border-bottom: 1px dotted $table-border-color;
+        border: none;
       }
     }
     > tr {
       > td {
-        border: none;
+        border-top: 1px solid $table-border-color;
+        border-bottom: 1px dotted $table-border-color;
       }
     }
   }
