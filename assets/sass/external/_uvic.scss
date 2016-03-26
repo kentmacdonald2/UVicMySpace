@@ -1,3 +1,30 @@
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+
 @font-face {
   font-family: "uvic-icons1";
   src: url("../fonts/uvic-icons1.eot");
@@ -8,14 +35,8 @@
   font-weight: normal;
   font-style: normal;
 }
-
-#uvic-HTML_1 {
-  height: 412.891px;
-  width: 100%;
-  z-index: 0;
-  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-  font: normal normal normal normal 16px / 16px Times;
-  overflow: auto;
+html {
+  overflow-x: hidden;
 }
 
 /*#uvic-HTML_1*/
@@ -301,7 +322,6 @@
 #uvic-NAV_36 {
   color: rgb(51, 51, 51);
   height: 39.9531px;
-  min-width: 960px;
   width: 100%;
   z-index: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
@@ -319,7 +339,6 @@
 #uvic-DIV_37 {
   color: rgb(51, 51, 51);
   height: 39.9531px;
-  min-width: 960px;
   position: relative;
   width: 100%;
   border: 0px none rgb(51, 51, 51);
@@ -1785,6 +1804,10 @@
   font: normal normal normal normal 12px / 16px Verdana, Arial, Helvetica, sans-serif;
   list-style: none outside none;
   outline: rgb(51, 51, 51) none 0px;
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: $screen-xs-max) {
+    display: none;
+  }
 }
 
 /*#uvic-LI_144*/
@@ -3498,6 +3521,10 @@
   font: normal normal normal normal 12px / 16px Verdana, Arial, Helvetica, sans-serif;
   list-style: none outside none;
   outline: rgb(51, 51, 51) none 0px;
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: $screen-xs-max) {
+    display: none;
+  }
 }
 
 /*#uvic-LI_277*/
@@ -4395,6 +4422,10 @@
   font: normal normal normal normal 12px / 16px Verdana, Arial, Helvetica, sans-serif;
   list-style: none outside none;
   outline: rgb(51, 51, 51) none 0px;
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: $screen-xs-max) {
+    display: none;
+  }
 }
 
 /*#uvic-LI_342*/
@@ -5772,6 +5803,10 @@
   font: normal normal normal normal 12px / 16px Verdana, Arial, Helvetica, sans-serif;
   list-style: none outside none;
   outline: rgb(51, 51, 51) none 0px;
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: $screen-xs-max) {
+    display: none;
+  }
 }
 
 /*#uvic-LI_442*/
@@ -6688,6 +6723,10 @@
   font: normal normal normal normal 12px / 16px Verdana, Arial, Helvetica, sans-serif;
   list-style: none outside none;
   outline: rgb(51, 51, 51) none 0px;
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: $screen-xs-max) {
+    display: none;
+  }
 }
 
 /*#uvic-LI_507*/
@@ -8209,6 +8248,10 @@
   font: normal normal normal normal 12px / 16px Verdana, Arial, Helvetica, sans-serif;
   list-style: none outside none;
   outline: rgb(51, 51, 51) none 0px;
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: $screen-xs-max) {
+    display: none;
+  }
 }
 
 /*#uvic-LI_622*/
@@ -10382,6 +10425,10 @@
   font: normal normal normal normal 12px / 16px Verdana, Arial, Helvetica, sans-serif;
   list-style: none outside none;
   outline: rgb(51, 51, 51) none 0px;
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: $screen-xs-max) {
+    display: none;
+  }
 }
 
 /*#uvic-LI_781*/
@@ -13890,8 +13937,7 @@
   box-shadow: rgba(0, 0, 0, 0.239216) 0px 0px 7.9992px 3.9996px;
   clear: both;
   color: rgb(51, 51, 51);
-  height: 183.984px;
-  min-width: 960px;
+  height: 184px;
   position: relative;
   width: 100%;
   background: none repeat scroll 0% 0% / 100% padding-box border-box, rgba(0, 0, 0, 0) linear-gradient(rgb(0, 51, 102), rgb(45, 85, 155)) repeat scroll 0% 0% / 100% padding-box border-box;
@@ -13899,6 +13945,10 @@
   font: normal normal normal normal 12px / 15.9984px Verdana, Arial, Helvetica, sans-serif;
   margin: 0px 0px 15.9996px;
   outline: rgb(51, 51, 51) none 0px;
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: $screen-xs-max) {
+    height: 102px;
+  }
 }
 
 /*#uvic-HEADER_1032*/
@@ -13906,7 +13956,6 @@
 #uvic-DIV_1033 {
   color: rgb(51, 51, 51);
   height: 183.984px;
-  min-width: 960px;
   width: 100%;
   border: 0px none rgb(51, 51, 51);
   font: normal normal normal normal 12px / 15.9984px Verdana, Arial, Helvetica, sans-serif;
@@ -14397,6 +14446,10 @@
   border: 0px none rgb(255, 255, 255);
   font: normal normal bold normal 12px / 15.9984px Arial, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: $screen-xs-max) {
+    display: none;
+  }
 }
 
 /*#uvic-NAV_1066*/
@@ -14420,6 +14473,10 @@
   margin: 0px;
   outline: rgb(255, 255, 255) none 0px;
   padding: 0px 8.00004px 48px;
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: $screen-xs-max) {
+    display: none;
+  }
 }
 
 /*#uvic-UL_1068*/
@@ -14505,7 +14562,6 @@
   text-align: left;
   visibility: hidden;
   white-space: nowrap;
-  width: 885.875px;
   border: 0px none rgb(255, 255, 255);
   font: normal normal bold normal 12px / 16px Arial, sans-serif;
   list-style: square outside none;
@@ -15286,7 +15342,6 @@
 #uvic-DIV_1117 {
   clear: both;
   color: rgb(51, 51, 51);
-  min-width: 960px;
   position: relative;
   width: 1365.03px;
   border: 0px none rgb(51, 51, 51);
@@ -15303,7 +15358,6 @@
   clear: both;
   color: rgb(102, 102, 102);
   height: 139px;
-  min-width: 960px;
   width: 100%;
   background: rgb(232, 232, 232) url("https://www.uvic.ca/assets2012/template3-2/images/footerslice-80px.jpg") repeat-x scroll 0px 100% / auto padding-box border-box;
   border-top: 1px solid rgb(204, 204, 204);
@@ -15313,6 +15367,10 @@
   font: normal normal normal normal 12px / 15.9984px Verdana, Arial, Helvetica, sans-serif;
   outline: rgb(102, 102, 102) none 0px;
   padding: 15.9996px 0px;
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: $screen-xs-max) {
+    display: none;
+  }
 }
 
 /*#uvic-FOOTER_1118*/
@@ -15320,7 +15378,6 @@
 #uvic-DIV_1119 {
   color: rgb(102, 102, 102);
   height: 139px;
-  min-width: 960px;
   width: 960px;
   border: 0px none rgb(102, 102, 102);
   font: normal normal normal normal 12px / 15.9984px Verdana, Arial, Helvetica, sans-serif;
@@ -17175,7 +17232,6 @@
   color: rgb(34, 34, 34);
   left: -3.35544 e+07px;
   position: absolute;
-  width: 204px;
   background: rgb(255, 255, 255) url("https://www.uvic.ca/assets2012/portal/images/themes/smoothness/ui-bg_flat_75_ffffff_40x100.png") repeat-x scroll 50% 50% / auto padding-box border-box;
   border: 0px none rgb(34, 34, 34);
   border-radius: 4px 4px 4px 4px;
@@ -17191,7 +17247,6 @@
   content: '.';
   display: block;
   visibility: hidden;
-  width: 204px;
   border: 0px none rgb(34, 34, 34);
   font: normal normal normal normal 12px / 15.9984px arial, helvetica, clean, sans-serif;
   outline: rgb(34, 34, 34) none 0px;
