@@ -46,6 +46,8 @@ table.timetable {
           overflow: hidden;
           z-index: 1;
 
+          cursor: pointer;
+
           .event-title {
             font-size: $font-size-small;
             font-weight: bold;
@@ -65,6 +67,11 @@ table.timetable {
             &.event-course-#{$i} {
               color:      darken(nth($course-colors, $i), 10%);
               background: lighten(nth($course-colors, $i), 40%);
+              &:hover,
+              &:focus
+              {
+                background: lighten(nth($course-colors, $i), 30%);
+              }
             }
           }
         }
