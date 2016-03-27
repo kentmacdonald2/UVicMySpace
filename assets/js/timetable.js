@@ -7,6 +7,7 @@ $(function(){
             container: '.mypage',
             html: true,
             trigger: 'manual',
+            placement: 'auto bottom',
             content: event.find(".event-popover").html()
         });
 
