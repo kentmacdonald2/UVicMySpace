@@ -30,51 +30,6 @@ table.timetable {
         > .fill {
           height: 2*$table-cell-padding;
         }
-
-        > .event {
-          width: 96%;
-          height: 2*$table-cell-padding - 2;
-          margin: 0 2%;
-
-          padding: $padding-base-vertical;
-          border-radius: $border-radius-base;
-          color: $gray;
-          background: $gray-lighter;
-
-          text-align: left;
-          position: absolute;
-          overflow: hidden;
-          z-index: 1;
-
-          cursor: pointer;
-
-          .event-title {
-            font-size: $font-size-small;
-            font-weight: bold;
-            white-space: nowrap;
-            padding: 0;
-            margin: 0;
-          }
-          $course-colors:
-                  #1f77b4
-                  #ff7f0e
-                  #2ca02c
-                  #d62728
-                  #7e55a3
-                  #a6538a
-                  #bcbd22;
-          @for $i from 1 through length($course-colors)-1 {
-            &.event-course-#{$i} {
-              color:      darken(nth($course-colors, $i), 10%);
-              background: lighten(nth($course-colors, $i), 40%);
-              &:hover,
-              &:focus
-              {
-                background: lighten(nth($course-colors, $i), 30%);
-              }
-            }
-          }
-        }
       }
     }
     > tr {
@@ -132,4 +87,63 @@ table.timetable {
   .table {
     background-color: $body-bg;
   }
+
+  // Events
+
+  .event {
+    width: 96%;
+    height: 2*$table-cell-padding - 2;
+    margin: 0 2%;
+
+    padding: $padding-base-vertical;
+    border-radius: $border-radius-base;
+    border-left: solid $border-radius-small;
+    color: $gray;
+    background: $gray-lighter;
+
+    text-align: left;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+
+    cursor: pointer;
+
+    .event-title {
+      font-size: $font-size-small;
+      font-weight: bold;
+      white-space: nowrap;
+      padding: 0;
+      margin: 0;
+    }
+
+    &.active {
+      border-left: solid $border-radius-small transparent;
+    }
+
+    $course-colors:
+            #1f77b4
+            #ff7f0e
+            #2ca02c
+            #d62728
+            #7e55a3
+            #a6538a
+            #bcbd22;
+    @for $i from 1 through length($course-colors)-1 {
+      &.event-course-#{$i} {
+        color:      nth($course-colors, $i);
+        background: lighten(nth($course-colors, $i), 40%);
+        &:hover,
+        &:focus
+        {
+          background: lighten(nth($course-colors, $i), 35%);
+        }
+        &.active {
+          color:      #fff;
+          background: nth($course-colors, $i);
+        }
+      }
+    }
+  }
 }
+
+
