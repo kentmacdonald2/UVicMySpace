@@ -3,7 +3,7 @@
     - It exists in the context of a schedule event
     - It is used in the weekPanel partial
 }}
-<div class="event event-{{course.class}}" style="height: {{multiply length 0.5625}}px">
+<div class="event event-{{course.class}}" style="height: {{multiply (lookup (lookup course.sections type) "length") 0.5625}}px">
     <h4 class="event-title">
         {{#with course}}{{code}} {{number}}{{/with}}
         {{#if (equals type "lecture")}}
@@ -13,6 +13,22 @@
             <i class="fa fa-flask fa-pull-right" data-toggle="tooltip" title="Hooray!"></i>
         {{/if}}
     </h4>
+    <div class="event-popover hidden">
+        <h4>
+            {{course.code}} {{course.number}} <span class="text-capitalize">{{type}}</span>
+            <small>{{lookup (lookup course.sections type) "code"}}</small>
+        </h4>
+        <p><b>Instructor:</b> {{course.prof}}</p>
+        {{#with (lookup (lookup course.sections type) "location")}}
+        <p>
+            <b>Location:</b>
+            <abbr title="{{building}} {{#if type}}{{type}}{{else}}Building{{/if}}">{{short}}</abbr> {{room}}
+        </p>
+            <a href="https://www.google.ca/maps/place/{{#replace " " "+"}}{{building}} {{#if type}}{{type}}{{else}}Building{{/if}}{{/replace}}" target="_blank">
+            <img class="img-responsive img-rounded" src="https://maps.googleapis.com/maps/api/staticmap?center=48.4632403,-123.311951&markers={{#replace " " "+"}}{{building}} {{#if type}}{{type}}{{else}}Building{{/if}}{{/replace}}&zoom=15&size=300x200&scale=2&key=AIzaSyC3kB96Upu98HSeS8YwHwOsj53Mb6Kvf8c"/>
+            </a>
+        {{/with}}
+    </div>
 </div>
 
 {{! How the height of events is calculated

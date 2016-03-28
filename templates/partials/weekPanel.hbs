@@ -3,12 +3,13 @@
     - It exists in the context of "Week"
     - Used on the Home Page
 }}
+<script src="/{{global.base_url}}assets/js/timetable.js"></script>
 <!-- Table -->
 <table class="timetable" width="100%">
     <thead>
     <tr>
         <th width="10%"><i class="fa fa-clock-o"></i></th>{{#each days}}
-        <th width="18%" class="{{#if (equals @key ../today)}}today{{else}} {{#unless (or (equals @key (offsetDay ../today 1)) (equals @key (offsetDay ../today 2)))}}hidden-xs{{/unless}}{{/if}}">
+        <th width="18%" class="{{#if (equals @key ../today)}}today{{else}}{{#unless (equals @key (offsetDay ../today 1))}}hidden-xs{{/unless}}{{/if}}">
             {{short}}
         </th>{{/each}}
     </tr>
@@ -17,9 +18,9 @@
         {{! Half Hour }}
         <tr class="half-hour">
             <th class="time" rowspan="2">{{to12hour this}}</th>{{#each ../days}}
-            <td class="{{#if (equals @key ../../today)}}today{{else}} {{#unless (or (equals @key (offsetDay ../../today 1)) (equals @key (offsetDay ../../today 2)))}}hidden-xs{{/unless}}{{/if}}">
+            <td class="{{#if (equals @key ../../today)}}today{{else}}{{#unless (equals @key (offsetDay ../../today 1))}}hidden-xs{{/unless}}{{/if}}">
                 {{#with (lookup (lookup ../../user.courses.semesters.[0].schedule @key) (toFixed (add ../this -0.5) 1))}}
-                {{>timetableEvent course=(lookup ../../../user.courses.semesters.[0].courses course)}}
+                {{>timetableEvent course=(lookup ../../../user.courses.semesters.[0].courses course) day=../this time=(add ../../this -0.5)}}
                 {{else}}
                 <div class="fill"></div>
                 {{/with}}
@@ -27,9 +28,9 @@
         </tr>
         {{! Hour }}
         <tr>{{#each ../days}}
-            <td class="{{#if (equals @key ../../today)}}today{{else}} {{#unless (or (equals @key (offsetDay ../../today 1)) (equals @key (offsetDay ../../today 2)))}}hidden-xs{{/unless}}{{/if}}">
+            <td class="{{#if (equals @key ../../today)}}today{{else}}{{#unless (equals @key (offsetDay ../../today 1))}}hidden-xs{{/unless}}{{/if}}">
                 {{#with (lookup (lookup ../../user.courses.semesters.[0].schedule @key) (toFixed ../this 1))}}
-                {{>timetableEvent course=(lookup ../../../user.courses.semesters.[0].courses course)}}
+                {{>timetableEvent course=(lookup ../../../user.courses.semesters.[0].courses course) day=../this time=../../this}}
                 {{else}}
                 <div class="fill"></div>
                 {{/with}}

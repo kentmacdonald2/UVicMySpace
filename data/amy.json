@@ -19,91 +19,75 @@
             "monday":{
               "8.5":{
                 "course": "csc226",
-                "type": "lecture",
-                "length": 80
+                "type": "lecture"
               },
               "11.5":{
                 "course": "ceng460",
-                "type": "lecture",
-                "length": 80
+                "type": "lecture"
               },
               "13.0":{
                 "course": "seng310",
-                "type": "lecture",
-                "length": 80
+                "type": "lecture"
               },
               "14.5":{
                 "course": "csc226",
-                "type": "lab",
-                "length": 50
+                "type": "lab"
               }
             },
             "tuesday":{
               "10.5":{
                 "course": "elec310",
-                "type": "lecture",
-                "length": 50
+                "type": "lecture"
               },
               "13.5":{
                 "course": "seng310",
-                "type": "lab",
-                "length": 110
+                "type": "lab"
               },
               "15.5":{
                 "course": "seng321",
-                "type": "lecture",
-                "length": 50
+                "type": "lecture"
               },
               "16.5":{
                 "course": "seng321",
-                "type": "lab",
-                "length": 80
+                "type": "lab"
               }
             },
             "wednesday":{
               "10.5":{
                 "course": "elec310",
-                "type": "lecture",
-                "length": 50
+                "type": "lecture"
               },
               "15.5":{
                 "course": "seng321",
-                "type": "lecture",
-                "length": 50
+                "type": "lecture"
               }
             },
             "thursday":{
               "8.5":{
                 "course": "csc226",
-                "type": "lecture",
-                "length": 80
+                "type": "lecture"
               },
               "11.5":{
                 "course": "ceng460",
-                "type": "lecture",
-                "length": 80
+                "type": "lecture"
               },
               "13.0":{
                 "course": "seng310",
-                "type": "lecture",
-                "length": 80
+                "type": "lecture"
               },
               "16.5":{
                 "course": "seng321",
-                "type": "lab",
-                "length": 80
+                "type": "lab"
               }
             },
             "friday":{
               "10.5":{
                 "course": "elec310",
-                "type": "lecture",
-                "length": 50
+                "type": "lecture"
               },
               "15.5":{
                 "course": "seng321",
-                "type": "lecture",
-                "length": 50
+                "type": "lecture"
               }
             }
           },
@@ -111,27 +95,126 @@
             "csc226": {
               "code": "CSC",
               "number": 226,
-              "class": "course-1"
+              "class": "course-1",
+              "prof": "Frank Ruskey",
+              "sections": {
+                "lecture": {
+                  "code":"A01",
+                  "length": 80,
+                  "location":{
+                    "building": "Human and Social Development",
+                    "short": "HSD",
+                    "room": "A240"
+                  }
+                },
+                "lab": {
+                  "code":"B01",
+                  "length": 50,
+                  "location":{
+                    "building": "Engineering Computer Science",
+                    "short": "ECS",
+                    "room": "242"
+                  }
+                }
+              }
             },
             "ceng460": {
               "code": "CENG",
               "number": 460,
-              "class": "course-2"
+              "class": "course-2",
+              "prof": "Lin Cai",
+              "sections": {
+                "lecture": {
+                  "code":"A01",
+                  "length": 80,
+                  "location":{
+                    "building": "Cornett",
+                    "short": "COR",
+                    "room": "B108"
+                  }
+                },
+                "lab": {
+                  "code":"B01",
+                  "length": 170,
+                  "location":{
+                    "building": "Engineering Laboratory",
+                    "type": "Wing",
+                    "short": "ELW",
+                    "room": "A321"
+                  }
+                }
+              }
             },
             "seng310": {
               "code": "SENG",
               "number": 310,
-              "class": "course-3"
+              "class": "course-3",
+              "prof": "Peggy Storey",
+              "sections": {
+                "lecture": {
+                  "code":"A01",
+                  "length": 80,
+                  "location":{
+                    "building": "Engineering Computer Science",
+                    "short": "ECS",
+                    "room": "125"
+                  }
+                },
+                "lab": {
+                  "code":"B01",
+                  "length": 110,
+                  "location":{
+                    "building": "Engineering Laboratory",
+                    "type": "Wing",
+                    "short": "ELW",
+                    "room": "B220"
+                  }
+                }
+              }
             },
             "seng321": {
               "code": "SENG",
               "number": 321,
-              "class": "course-4"
+              "class": "course-4",
+              "prof": "Hausi Muller",
+              "sections": {
+                "lecture": {
+                  "code":"A02",
+                  "length": 50,
+                  "location":{
+                    "building": "MacLaurin",
+                    "short": "MAC",
+                    "room": "D288"
+                  }
+                },
+                "lab": {
+                  "code":"B02",
+                  "length": 80,
+                  "location":{
+                    "building": "Engineering Laboratory",
+                    "type": "Wing",
+                    "short": "ELW",
+                    "room": "B215"
+                  }
+                }
+              }
             },
             "elec310": {
               "code": "ELEC",
               "number": 310,
-              "class": "course-5"
+              "class": "course-5",
+              "prof": "Alexandra Albu",
+              "sections": {
+                "lecture": {
+                  "code":"A01",
+                  "length": 50,
+                  "location":{
+                    "building": "Engineering Computer Science",
+                    "short": "ECS",
+                    "room": "125"
+                  }
+                }
+              }
             }
           }
         }

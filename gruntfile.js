@@ -35,6 +35,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'assets/',
           src: [
+            '**/*.js',
             '**/*.css',
             '**/*.css.map',
             '**/*.eot',
@@ -64,7 +65,7 @@ module.exports = function(grunt) {
         tasks: ['build-styles']
       },
       assets: {
-        files: 'assets/img/**/*',
+        files: ['assets/img/**/*', 'assets/js/**/*'],
         tasks: ['copy:assets']
       },
       templates: {
