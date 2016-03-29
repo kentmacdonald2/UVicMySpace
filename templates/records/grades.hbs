@@ -7,7 +7,7 @@
         - Keep the data organized, if you're adding financial data put it under "finances"
     }}
     <div class="col-md-8">
-        {{#each user.records.grades}}
+        {{#each user.records.semesters}}
             <div class="semester {{#if (equals @index 0)}}active{{/if}}">
                 <h3>{{semester}}</h3>
                 <p>

@@ -212,7 +212,7 @@
       ]
     },
     "finances": {
-      "balances": [
+      "semesters": [
         {
           "semester": "Spring 2016",
           "total_charges": 2968.95,
@@ -285,27 +285,24 @@
         "t2202a": {
           "title": "T2202A Form",
           "years": [
-            2016,
-            2015
+            2015,
+            2014,
+            2013
           ]
         },
         "t4a": {
           "title": "T4A Form",
           "years": [
-            2016,
-            2015
+            2015,
+            2014,
+            2013
           ]
-        }
-      },
-      "awards": {
-        "apply": {
-
         }
       }
     },
     "records": {
       "overall_GPA": 7,
-      "grades": [
+      "semesters": [
         {
           "semester": "Spring 2016",
           "semester_GPA": 7.8,

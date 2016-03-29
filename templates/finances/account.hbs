@@ -10,7 +10,7 @@
     {{!Start of the tables}}
     <div class="row">
         <div class="col-md-7">
-            {{#with user.finances.balances.[0]}}
+            {{#with user.finances.semesters.[0]}}
                 <h3>Spring 2016
                     <div class=pull-right>
                         {{!Print Button}}
@@ -76,7 +76,7 @@
                         <th width="20%">Due</th>
                     </tr>
                     </thead>
-                    <tbody>{{#each user.finances.balances}}
+                    <tbody>{{#each user.finances.semesters}}
                         <tr>
                             <td>{{semester}}</td>
                             <td>${{toFixed total_charges 2}}</td>
