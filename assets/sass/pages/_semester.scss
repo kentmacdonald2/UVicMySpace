@@ -1,0 +1,8 @@
+.semester {
+  display: none;
+  visibility: hidden;
+  &.active {
+    display: block;
+    visibility: visible;
+  }
+}

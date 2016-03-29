@@ -76,7 +76,8 @@
       "subsections": {
         "grades": {
           "title": "Grades",
-          "path": "grades.html"
+          "path": "grades.html",
+          "semester_switch": true
         },
         "transcripts": {
           "title": "Transcripts",

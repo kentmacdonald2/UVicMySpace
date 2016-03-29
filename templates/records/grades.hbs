@@ -6,27 +6,34 @@
         - Data comes in from JSON files, please put all data/strings in the JSON files
         - Keep the data organized, if you're adding financial data put it under "finances"
     }}
-    {{#each user.records.grades}}
-        <h2>{{semester}}</h2>
-        <p><span class="text-muted">Semester GPA </span><span class="badge">{{semester_GPA}}</span></p>
-        <!-- Grade Table -->
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Course</th>
-                    <th>Percent</th>
-                    <th>Letter Grade</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>{{#each courses}}
-                    <td>{{code}} {{number}}</td>
-                    <td>{{percent}}</td>
-                    <td>{{letter}}</td>
-                </tr>{{/each}}
-            </tbody>
-        </table>
-    {{/each}}
-
+    <div class="col-md-8">
+        {{#each user.records.grades}}
+            <div class="semester {{#if (equals @index 0)}}active{{/if}}">
+                <h3>{{semester}}</h3>
+                <p>
+                    <span class="text-muted">Semester GPA </span><span class="badge">{{semester_GPA}}</span>
+                </p>
+                <div class="panel panel-default">
+                    <!-- Grade Table -->
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Percent</th>
+                            <th>Letter Grade</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>{{#each courses}}
+                                <td>{{code}} {{number}}</td>
+                                <td>{{percent}}</td>
+                                <td>{{letter}}</td>
+                            </tr>{{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        {{/each}}
+    </div>
 </div>
 {{/default}}
