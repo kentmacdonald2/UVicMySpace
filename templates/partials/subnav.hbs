@@ -10,11 +10,8 @@
     </div>
 {{#if page.semester_switch}}
     <div class="col-md-2">
-        <select class="form-control">
-            <option>Spring 2016</option>
-            <option>Fall 2015</option>
-            <option>Spring 2015</option>
-            <option>Fall 2014</option>
+        <select class="form-control semester-switch" data-toggle="semester">{{#each (lookup (lookup user section.id) "semesters")}}
+            <option value="#{{#replace " " "-"}}{{semester}}{{/replace}}">{{semester}}</option>{{/each}}
         </select>
     </div>
 </div>

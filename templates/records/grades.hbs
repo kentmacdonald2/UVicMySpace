@@ -8,7 +8,7 @@
     }}
     <div class="col-md-8">
         {{#each user.records.semesters}}
-            <div class="semester {{#if (equals @index 0)}}active{{/if}}">
+            <div id="{{#replace " " "-"}}{{semester}}{{/replace}}" class="semester {{#if (equals @index 0)}}active{{/if}}">
                 <h3>{{semester}}</h3>
                 <p>
                     <span class="text-muted">Semester GPA </span><span class="badge">{{semester_GPA}}</span>
