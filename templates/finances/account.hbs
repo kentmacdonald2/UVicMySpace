@@ -10,8 +10,9 @@
     {{!Start of the tables}}
     <div class="row">
         <div class="col-md-7">
-            {{#with user.finances.semesters.[0]}}
-                <h3>Spring 2016
+            {{#each user.finances.semesters}}
+            <div id="{{#replace " " "-"}}{{semester}}{{/replace}}" class="semester {{#if (equals @index 0)}}active{{/if}}">
+                <h3>{{semester}}
                     <div class=pull-right>
                         {{!Print Button}}
                         <div class="btn-group">
@@ -55,7 +56,7 @@
                         </tbody>
                     </table>
                 </div>
-            {{/with}}
+            </div>{{/each}}
         </div>
 
         <div class="col-md-5">

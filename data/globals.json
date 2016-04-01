@@ -112,7 +112,8 @@
         "account": {
           "title": "Account",
           "path": "account.html",
-          "id": "account"
+          "id": "account",
+          "semester_switch": true
         },
         "taxes": {
           "title": "Tax Slips",
