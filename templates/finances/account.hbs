@@ -10,6 +10,7 @@
     {{!Start of the tables}}
     <div class="row">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div class="col-xs-6">
             <h2 class="sub-header">Spring 2016
                 <div class=pull-right>
@@ -22,6 +23,43 @@
         <div class="col-md-7">
             {{#with user.finances.balances.[0]}}
                 <h3>Spring 2016
+=======
+        <div class="col-md-5 col-md-push-7">
+            <h3>Balance
+                <div class=pull-right>
+                    <a href="#" class="btn btn-primary">Pay Now <i class="fa fa-credit-card"></i></a>
+                </div>
+            </h3>
+
+            <p>Current Balance: <span class="text-danger text-bold">$637.12</span></p>
+            <div class="panel panel-default">
+                <table class="table table-hover semester-switch" data-toggle="semester" width="100%">
+                    <thead>
+                    <tr>
+                        <th width="40%">Semester</th>
+                        <th width="20%">Charges</th>
+                        <th width="20%">Paid</th>
+                        <th width="20%">Due</th>
+                    </tr>
+                    </thead>
+                    <tbody>{{#each user.finances.semesters}}
+                        <tr class="{{#if (equals @index 0)}}active{{/if}}"
+                            data-target="#{{#replace " " "-"}}{{semester}}{{/replace}}">
+                            <td>{{semester}}</td>
+                            <td>${{toFixed total_charges 2}}</td>
+                            <td>${{toFixed payments 2}}</td>
+                            <td class="{{#if due}}text-danger text-bold{{/if}}">${{toFixed due 2}}</td>
+                        </tr>{{/each}}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="col-md-7 col-md-pull-5">
+            {{#each user.finances.semesters}}
+            <div id="{{#replace " " "-"}}{{semester}}{{/replace}}" class="semester {{#if (equals @index 0)}}active{{/if}}">
+                <h3>{{semester}}
+>>>>>>> hwkr/master
                     <div class=pull-right>
                         {{!Print Button}}
                         <div class="btn-group">
@@ -66,6 +104,7 @@
                         </tbody>
                     </table>
                 </div>
+<<<<<<< HEAD
             {{/with}}
         </div>
 
@@ -102,15 +141,16 @@
                 </table>
             </div>
 
+=======
+            </div>{{/each}}
+>>>>>>> hwkr/master
         </div>
-
 
         <script>
             function printFunction() {
                 window.print();
             }
         </script>
-
 
     </div>
 {{/default}}

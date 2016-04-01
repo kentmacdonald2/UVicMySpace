@@ -5,6 +5,7 @@
     "home": {
       "title": "Home",
       "path": "",
+      "id": "home",
       "active_panel": "week",
       "panels": {
         "week": {
@@ -53,72 +54,91 @@
     "courses": {
       "title": "Courses",
       "path": "courses/",
+      "id": "courses",
       "start_page": "timetable",
       "subsections": {
         "timetable": {
           "title": "Timetable",
-          "path": "timetable.html"
+          "path": "timetable.html",
+          "id": "timetable"
         },
         "program_change": {
           "title": "Program",
-          "path": "program.html"
+          "path": "program.html",
+          "id": "program"
         },
         "graduation": {
           "title": "Graduation",
-          "path": "graduation.html"
+          "path": "graduation.html",
+          "id": "graduation"
         }
       }
     },
     "records": {
       "title": "Records",
       "path": "records/",
+      "id": "records",
       "start_page": "grades",
       "subsections": {
         "grades": {
           "title": "Grades",
-          "path": "grades.html"
+          "path": "grades.html",
+          "id": "grades",
+          "semester_switch": true
         },
         "transcripts": {
           "title": "Transcripts",
-          "path": "transcripts.html"
+          "path": "transcripts.html",
+          "id": "transcripts"
         },
         "verification": {
           "title": "Verification of Enrollment",
-          "path": "verification.html"
+          "nav_title": "Verification<span class='hidden-xs'> of Enrollment</span>",
+          "path": "verification.html",
+          "id": "verification"
         },
         "report": {
           "title": "CAPP Report",
-          "path": "report.html"
+          "nav_title": "CAPP<span class='hidden-xs'> Report</span>",
+          "path": "report.html",
+          "id": "report"
         }
       }
     },
     "finances": {
       "title": "Finances",
       "path": "finances/",
+      "id": "finances",
       "start_page": "account",
       "subsections": {
         "account": {
           "title": "Account",
-          "path": "account.html"
+          "path": "account.html",
+          "id": "account",
+          "semester_switch": true
         },
         "taxes": {
           "title": "Tax Slips",
-          "path": "taxes.html"
+          "path": "taxes.html",
+          "id": "taxes"
         },
         "awards": {
           "title": "Awards",
-          "path": "awards.html"
+          "path": "awards.html",
+          "id": "awards"
         }
       }
     },
     "help": {
       "title": "Help",
       "path": "help/",
+      "id": "help",
       "start_page": "faq",
       "subsections": {
         "faq": {
           "title": "FAQ",
-          "path": "faq.html"
+          "path": "faq.html",
+          "id": "faq"
         }
       }
     }

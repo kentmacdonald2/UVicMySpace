@@ -221,7 +221,7 @@
       ]
     },
     "finances": {
-      "balances": [
+      "semesters": [
         {
           "semester": "Spring 2016",
           "total_charges": 2968.95,
@@ -277,44 +277,167 @@
         {
           "semester": "Fall 2015",
           "total_charges": 3617.23,
-          "payments": 3617.23
+          "payments": 3617.23,
+          "charges": [
+            {
+              "title": "Courses",
+              "total_amount": 1234.00,
+              "items": [
+                {
+                  "item": "LIPSUM 123",
+                  "amount": 123.00
+                },
+                {
+                  "item": "LIPSUM 123",
+                  "amount": 123.00
+                },
+                {
+                  "item": "LIPSUM 123",
+                  "amount": 123.00
+                },
+                {
+                  "item": "LIPSUM 123",
+                  "amount": 123.00
+                }
+              ]
+            },
+            {
+              "title": "Fees",
+              "total_amount": 233.95,
+              "items": [
+                {
+                  "item": "UVic Athletics",
+                  "amount": 82.10
+                },
+                {
+                  "item": "Bus Pass",
+                  "amount": 81.00
+                },
+                {
+                  "item": "UVSS Student Membership",
+                  "amount": 70.85
+                }
+              ]
+            }
+          ]
         },
         {
           "semester": "Spring 2015",
           "total_charges": 2421.95,
-          "payments": 2421.95
+          "payments": 2421.95,
+          "charges": [
+            {
+              "title": "Courses",
+              "total_amount": 1234.00,
+              "items": [
+                {
+                  "item": "LIPSUM 123",
+                  "amount": 123.00
+                },
+                {
+                  "item": "LIPSUM 123",
+                  "amount": 123.00
+                },
+                {
+                  "item": "LIPSUM 123",
+                  "amount": 123.00
+                },
+                {
+                  "item": "LIPSUM 123",
+                  "amount": 123.00
+                }
+              ]
+            },
+            {
+              "title": "Fees",
+              "total_amount": 233.95,
+              "items": [
+                {
+                  "item": "UVic Athletics",
+                  "amount": 82.10
+                },
+                {
+                  "item": "Bus Pass",
+                  "amount": 81.00
+                },
+                {
+                  "item": "UVSS Student Membership",
+                  "amount": 70.85
+                }
+              ]
+            }
+          ]
         },
         {
           "semester": "Fall 2014",
           "total_charges": 3312.67,
-          "payments": 3312.67
+          "payments": 3312.67,
+          "charges": [
+            {
+              "title": "Courses",
+              "total_amount": 1234.00,
+              "items": [
+                {
+                  "item": "LIPSUM 123",
+                  "amount": 123.00
+                },
+                {
+                  "item": "LIPSUM 123",
+                  "amount": 123.00
+                },
+                {
+                  "item": "LIPSUM 123",
+                  "amount": 123.00
+                },
+                {
+                  "item": "LIPSUM 123",
+                  "amount": 123.00
+                }
+              ]
+            },
+            {
+              "title": "Fees",
+              "total_amount": 233.95,
+              "items": [
+                {
+                  "item": "UVic Athletics",
+                  "amount": 82.10
+                },
+                {
+                  "item": "Bus Pass",
+                  "amount": 81.00
+                },
+                {
+                  "item": "UVSS Student Membership",
+                  "amount": 70.85
+                }
+              ]
+            }
+          ]
         }
       ],
       "tax-slips": {
         "t2202a": {
           "title": "T2202A Form",
           "years": [
-            2016,
-            2015
+            2015,
+            2014,
+            2013
           ]
         },
         "t4a": {
           "title": "T4A Form",
           "years": [
-            2016,
-            2015
+            2015,
+            2014,
+            2013
           ]
-        }
-      },
-      "awards": {
-        "apply": {
-
         }
       }
     },
     "records": {
       "overall_GPA": 7,
-      "grades": [
+      "semesters": [
         {
           "semester": "Spring 2016",
           "semester_GPA": 7.8,

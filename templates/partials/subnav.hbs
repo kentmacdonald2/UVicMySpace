@@ -1,7 +1,18 @@
-<ul class="nav nav-pills">{{#each section.subsections}}
-    <li {{#if (equals this ../page)}}class="active"{{/if}}>
-        <a {{#unless (equals this ../page)}}href="/{{../base_url}}{{../user.path}}{{../section.path}}{{path}}"{{/unless}}>
-            {{title}}
-        </a>
-    </li>{{/each}}
-</ul>
+<div class="row">
+    <div class="col-md-10 col-sm-9">
+        <ul class="nav nav-pills">{{#each section.subsections}}
+            <li {{#if (equals this ../page)}}class="active"{{/if}}>
+                <a {{#unless (equals this ../page)}}href="/{{../base_url}}{{../user.path}}{{../section.path}}{{path}}"{{/unless}}>
+                    {{#if nav_title}}{{{nav_title}}}{{else}}{{{title}}}{{/if}}
+                </a>
+            </li>{{/each}}
+        </ul>
+    </div>
+{{#if page.semester_switch}}
+    <div class="col-md-2 col-sm-3">
+        <br class="visible-xs"/>
+        <select class="form-control semester-switch" data-toggle="semester">{{#each (lookup (lookup user section.id) "semesters")}}
+            <option value="#{{#replace " " "-"}}{{semester}}{{/replace}}">{{semester}}</option>{{/each}}
+        </select>
+    </div>{{/if}}
+</div>
