@@ -6,3 +6,15 @@
     visibility: visible;
   }
 }
+
+table.semester-switch {
+  > tbody {
+    > tr {
+      cursor: pointer;
+      &.active {
+        cursor: default;
+      }
+    }
+  }
+
+}

@@ -15,6 +15,12 @@ $(function(){
         });
     });
 
+    $('table[data-toggle="semester"] > tbody > tr').each(function(){
+        $(this).click(function(){
+            SetSemester($(this).data('target'));
+        });
+    });
+
     function SetSemester(id){
         var $semester = $('.semester' + id);
         if (!$semester.length) throw Error("Semester '" + id + "' not found on page.",id);
@@ -29,8 +35,12 @@ $(function(){
         if(history.pushState) history.pushState(null, null, id);
         else location.hash = id;
 
-        //Set the selects
+        // Set the selects
         $('select[data-toggle="semester"]').val(id);
+
+        // Set the Table
+        $('table[data-toggle="semester"] > tbody > tr.active').removeClass('active');
+        $('table[data-toggle="semester"] > tbody > tr[data-target="'+ id +'"]').addClass('active');
     }
 
 });

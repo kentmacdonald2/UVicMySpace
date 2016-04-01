@@ -68,7 +68,7 @@
 
             <p>Current Balance: <span class="text-danger text-bold">$637.12</span></p>
             <div class="panel panel-default">
-                <table class="table table-hover" width="100%">
+                <table class="table table-hover semester-switch" data-toggle="semester" width="100%">
                     <thead>
                     <tr>
                         <th width="40%">Semester</th>
@@ -78,7 +78,8 @@
                     </tr>
                     </thead>
                     <tbody>{{#each user.finances.semesters}}
-                        <tr>
+                        <tr class="{{#if (equals @index 0)}}active{{/if}}"
+                            data-target="#{{#replace " " "-"}}{{semester}}{{/replace}}">
                             <td>{{semester}}</td>
                             <td>${{toFixed total_charges 2}}</td>
                             <td>${{toFixed payments 2}}</td>
