@@ -93,11 +93,13 @@
         },
         "verification": {
           "title": "Verification of Enrollment",
+          "nav_title": "Verification<span class='hidden-xs'> of Enrollment</span>",
           "path": "verification.html",
           "id": "verification"
         },
         "report": {
           "title": "CAPP Report",
+          "nav_title": "CAPP<span class='hidden-xs'> Report</span>",
           "path": "report.html",
           "id": "report"
         }
