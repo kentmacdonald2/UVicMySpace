@@ -17,7 +17,7 @@ $(function(){
 
     function SetSemester(id){
         var $semester = $('.semester' + id);
-        if (!$semester) throw Error("No semesters found on page, you should remove the semester switch.",id);
+        if (!$semester.length) throw Error("Semester '" + id + "' not found on page.",id);
 
         //Hide other Semester
         $('.semester.active').removeClass('active');
