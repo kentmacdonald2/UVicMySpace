@@ -1,0 +1,32 @@
+{{! This is the template for the Grade Table
+    -------------------------------------------------------
+    - It exists in the context of "Week"
+    - Used on the Home Page
+}}
+<!-- Grade Table -->
+<table class="table">
+    {{#each user.records.semesters}}
+        <div id="{{#replace " " "-"}}{{semester}}{{/replace}}" class="semester {{#if (equals @index 0)}}active{{/if}}">
+            <h3>{{semester}}</h3>
+            <p>
+                <span class="text-muted">Semester GPA </span><span class="badge">{{semester_GPA}}</span>
+            </p>
+            <div class="panel panel-default">
+                <tr>
+                    <th>Course</th>
+                    <th>Percent</th>
+                    <th>Letter Grade</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>{{#each courses}}
+                        <td>{{code}} {{number}}</td>
+                        <td>{{percent}}</td>
+                        <td>{{letter}}</td>
+                    </tr>{{/each}}
+                </tbody>
+            </div>
+        </div>
+    {{/each}}
+    <thead>
+</table>
