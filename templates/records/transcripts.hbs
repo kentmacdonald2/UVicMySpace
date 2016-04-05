@@ -14,13 +14,13 @@
         <div class="panel panel-default">
             <div class="panel-body">
                 {{#each user.records.semesters}}
-                        <div id="{{#replace " " "-"}}{{semester}}{{/replace}}" class="semester {{#if (equals @index 0)}}active{{/if}}">
+                        <section>
                             <h3>{{semester}}</h3>
                             <p>
                                 <span class="text-muted">Semester GPA </span><span class="badge">{{semester_GPA}}</span>
                             </p>
                             {{> gradeTable static=true}}
-                        </div>
+                        </section>
                 {{/each}}
             </div>
         </div>
