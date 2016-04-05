@@ -209,7 +209,235 @@
             }
           }
         }
-      ]
+      ],
+      "program": {
+        "major": "Cinematography",
+        "years": [
+          {
+            "year": 2016,
+            "semesters": [
+              {
+                "semester": "Fall",
+                "courses": [
+                ]
+              },
+              {
+                "semester": "Summer",
+                "courses": [
+                ]
+              },
+              {
+                "semester": "Spring",
+                "courses": [
+                  {
+                    "code": "CSC",
+                    "number": 100,
+                    "complete": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "year": 2015,
+            "semesters": [
+              {
+                "semester": "Spring",
+                "courses": [
+                  {
+                    "code": "CSC",
+                    "number": 100,
+                    "complete": true
+                  }
+                ]
+              },
+              {
+                "semester": "Summer",
+                "courses": [
+                ]
+              },
+              {
+                "semester": "Fall",
+                "courses": [
+                  {
+                    "code": "THEA",
+                    "number": 211,
+                    "complete": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "year": 2017,
+            "semesters": [
+              {
+                "semester": "Spring",
+                "courses": [
+                  {
+                    "code": "HA",
+                    "number": 312,
+                    "complete": true
+                  },
+                  {
+                    "code": "SLST",
+                    "number": 380,
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": "309A",
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 310,
+                    "complete": true
+                  }
+                ]
+              },
+              {
+                "semester": "Summer",
+                "courses": [
+                  {
+                    "code": "Theatre Practicum",
+                    "complete": true
+                  }
+                ]
+              },
+              {
+                "semester": "Fall",
+                "courses": [
+                  {
+                    "code": "HA",
+                    "number": 370,
+                    "complete": true
+                  },
+                  {
+                    "code": "FA",
+                    "number": 305,
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": "309B",
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 333,
+                    "complete": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "year": 2018,
+            "semesters": [
+              {
+                "semester": "Spring",
+                "courses": [
+                  {
+                    "code": "WS",
+                    "number": 349,
+                    "complete": false
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 362,
+                    "complete": false
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 363,
+                    "complete": false
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 390,
+                    "complete": false
+                  }
+                ]
+              },
+              {
+                "semester": "Summer",
+                "courses": [
+                  {
+                    "code": "Film Practicum",
+                    "comeplete": false
+                  }
+                ]
+              },
+              {
+                "semester": "Fall",
+                "courses": [
+                  {
+                    "code": "ANTH",
+                    "number": 309,
+                    "complete": false
+                  },
+                  {
+                    "code": "HA",
+                    "number": 370,
+                    "complete": false
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 391,
+                    "complete": false
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 409,
+                    "complete": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "year": 2019,
+            "semesters": [
+              {
+                "semester": "Spring",
+                "courses": [
+                  {
+                    "code": "WS",
+                    "number": 349,
+                    "complete": false
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 411,
+                    "complete": false
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 412,
+                    "complete": false
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 414,
+                    "complete": false
+                  }
+                ]
+              },
+              {
+                "semester": "Fall",
+                "courses": [
+                ]
+              },
+              {
+                "semester": "Summer",
+                "courses": [
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
     "finances": {
       "semesters": [
