@@ -56,6 +56,20 @@ h1 {
   margin: 0 auto;
 }
 
+.img-responsive {
+  &.pull-right,
+  &.pull-left {
+    margin: 6px 18px;
+    max-width: 256px;
+  }
+  &.pull-left {
+    margin-left: 0;
+  }
+  &.pull-right {
+    margin-right: 0;
+  }
+}
+
 .figure {
   margin-top: 40px;
   margin-bottom: 40px;
