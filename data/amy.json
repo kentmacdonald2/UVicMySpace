@@ -219,6 +219,26 @@
               {
                 "semester": "Fall",
                 "courses": [
+                  {
+                    "code": "ENGL",
+                    "number": 135,
+                    "complete": true
+                  },
+                  {
+                    "code": "CSC",
+                    "number": 100,
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 101,
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 111,
+                    "complete": true
+                  }
                 ]
               },
               {
@@ -230,8 +250,28 @@
                 "semester": "Spring",
                 "courses": [
                   {
-                    "code": "CSC",
-                    "number": 100,
+                    "code": "ENGL",
+                    "number": 136,
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 102,
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 120,
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 112,
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 122,
                     "complete": true
                   }
                 ]
@@ -245,10 +285,25 @@
                 "semester": "Spring",
                 "courses": [
                   {
-                    "code": "CSC",
-                    "number": 100,
+                    "code": "THEA",
+                    "number": 205,
                     "complete": true
-                  }
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 211,
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 225,
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 251,
+                    "complete": true
+                  },
                 ]
               },
               {
@@ -261,7 +316,22 @@
                 "courses": [
                   {
                     "code": "THEA",
-                    "number": 211,
+                    "number": 212,
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 252,
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 223,
+                    "complete": true
+                  },
+                  {
+                    "code": "THEA",
+                    "number": 304,
                     "complete": true
                   }
                 ]
