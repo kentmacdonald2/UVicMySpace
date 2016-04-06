@@ -46,6 +46,14 @@ module.exports = function(grunt) {
           ],
           dest: 'UVicMySpace/assets/'
         }]
+      },
+      static: {
+        files: [{
+          expand: true,
+          cwd: 'static/',
+          src: ['**/*'],
+          dest: 'UVicMySpace/'
+        }]
       }
     },
     cssmin: {
@@ -68,6 +76,10 @@ module.exports = function(grunt) {
         files: ['assets/img/**/*', 'assets/js/**/*'],
         tasks: ['copy:assets']
       },
+      statitic: {
+        files: ['static/**/*'],
+        tasks: ['copy:static']
+      },
       templates: {
         files: 'templates/**/*',
         tasks: ['build-templates']
@@ -89,7 +101,7 @@ module.exports = function(grunt) {
   // Tasks.
   grunt.registerTask('build-styles', ['sass', 'cssmin', 'copy:assets']);
   grunt.registerTask('build-templates', ['compile-handlebars']);
-  grunt.registerTask('build', ['build-templates', 'build-styles']);
+  grunt.registerTask('build', ['build-templates', 'build-styles', 'copy:static']);
   grunt.registerTask('default', ['build', 'watch']);
 
 };
