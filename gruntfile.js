@@ -78,7 +78,7 @@ module.exports = function(grunt) {
     },
     watch: {
       styles: {
-        files: 'assets/sass/**/*.scss',
+        files: ['assets/sass/**/*.scss', 'static/assets/sass/**/*.scss'],
         tasks: ['build-styles']
       },
       assets: {
