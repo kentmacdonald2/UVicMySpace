@@ -44,6 +44,7 @@ jspm_packages
 .sass-cache/
 *.css.map
 assets/css/
+static/assets/css/
 
 
 ### Intellij ###

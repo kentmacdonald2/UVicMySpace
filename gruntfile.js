@@ -12,6 +12,15 @@ module.exports = function(grunt) {
         files: {
           'assets/css/MyPage.css': 'assets/sass/MyPage.scss'
         }
+      },
+      static: {
+        options: {
+          style: 'expanded',
+          sourcemap: 'auto'
+        },
+        files: {
+          'static/assets/css/report.css': 'static/assets/sass/report.scss'
+        }
       }
     },
     'compile-handlebars': {
@@ -76,7 +85,7 @@ module.exports = function(grunt) {
         files: ['assets/img/**/*', 'assets/js/**/*'],
         tasks: ['copy:assets']
       },
-      statitic: {
+      static: {
         files: ['static/**/*'],
         tasks: ['copy:static']
       },
