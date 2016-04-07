@@ -28,22 +28,27 @@
 
 <!-- Splash
 ================================================== -->
-<header>
-    <h1>
-        <span>MyUVic</span>
-        <br/>
-        <small>A redesign of the UVic Web Services</small>
-    </h1>
+<header class="text-center">
+    <h1>MyUVic</h1>
+
+    <h2>A redesign of the<br class="visible-xs"/> UVic Web Services</h2>
+
+
+    <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#video-modal" style="margin-top:30px;">
+        <span class="glyphicon glyphicon-play-circle" style="top:2px;"></span> Watch the Video
+    </button>
+
+    <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <iframe src="https://www.youtube.com/embed/VtbI9fOM61M" frameborder="0" class="modal-video" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 </header>
 
 
 <main class="container">
-    <section id="blurb" class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <iframe height="315" src="https://www.youtube.com/embed/VtbI9fOM61M" class="featurette-video"
-                    allowfullscreen></iframe>
-        </div>
-    </section>
     <section id="problem" class="row">
         <div class="col-md-8 col-md-offset-2">
             <h2>Our Challenge</h2>
