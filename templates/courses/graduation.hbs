@@ -1,0 +1,31 @@
+{{#>default section=sections.courses page=sections.courses.subsections.graduation}}
+<div style="min-height: 60vh;">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>{{page.title}}</h2>
+            <p>You're this done!</p>
+        </div>
+    </div>
+    {{#with user.courses.graduation}}
+        <div class="row">
+            <div class="col-md-8">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{progress}}" aria-valuemin="0"
+                         aria-valuemax="100" style="width: {{progress}}%;">
+                            {{progress}}&percnt;
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <button type="button" class="btn btn-primary btn-block"
+                        {{#unless (equals progress 100)}}disabled{{/unless}}>
+                    Apply for graduation
+                </button>
+            </div>
+        </div>
+    {{/with}}
+</div>
+{{/default}}

@@ -12,6 +12,15 @@ module.exports = function(grunt) {
         files: {
           'assets/css/MyPage.css': 'assets/sass/MyPage.scss'
         }
+      },
+      static: {
+        options: {
+          style: 'expanded',
+          sourcemap: 'auto'
+        },
+        files: {
+          'static/assets/css/report.css': 'static/assets/sass/report.scss'
+        }
       }
     },
     'compile-handlebars': {
@@ -46,6 +55,14 @@ module.exports = function(grunt) {
           ],
           dest: 'UVicMySpace/assets/'
         }]
+      },
+      static: {
+        files: [{
+          expand: true,
+          cwd: 'static/',
+          src: ['**/*'],
+          dest: 'UVicMySpace/'
+        }]
       }
     },
     cssmin: {
@@ -61,12 +78,16 @@ module.exports = function(grunt) {
     },
     watch: {
       styles: {
-        files: 'assets/sass/**/*.scss',
+        files: ['assets/sass/**/*.scss', 'static/assets/sass/**/*.scss'],
         tasks: ['build-styles']
       },
       assets: {
         files: ['assets/img/**/*', 'assets/js/**/*'],
         tasks: ['copy:assets']
+      },
+      static: {
+        files: ['static/**/*'],
+        tasks: ['copy:static']
       },
       templates: {
         files: 'templates/**/*',
@@ -89,7 +110,7 @@ module.exports = function(grunt) {
   // Tasks.
   grunt.registerTask('build-styles', ['sass', 'cssmin', 'copy:assets']);
   grunt.registerTask('build-templates', ['compile-handlebars']);
-  grunt.registerTask('build', ['build-templates', 'build-styles']);
+  grunt.registerTask('build', ['build-templates', 'build-styles', 'copy:static']);
   grunt.registerTask('default', ['build', 'watch']);
 
 };

@@ -9,6 +9,27 @@
     {{! Access the page context with `page` (see globals.json)}}
     <h2>{{page.title}}</h2>
     {{! Access the page context with `user` (see amy.json)}}
-    <p>{{user.content}}</p>
+    <div class="panel panel-default">
+        <table class="table table-striped" width="100%">
+            <thead>
+                <tr>
+                    <th width="10%"></th>
+                    <th width="30%" >Spring</th>
+                    <th width="30%">Summer</th>
+                    <th width="30%">Fall</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>{{#each user.courses.program.years}}
+                    <th class="text-center">{{year}}</th>{{#each semesters}}
+                    <td>
+                        <ul class="list-group">{{#each courses}}
+                            <li class="list-group-item list-group-item-{{#if complete}}success{{else}}info{{/if}}">{{code}} {{number}}</li>{{/each}}
+                        </ul>
+                    </td>{{/each}}
+                </tr>{{/each}}
+            </tbody>
+        </table>
+    </div>
 </div>
 {{/default}}

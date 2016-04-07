@@ -1,5 +1,5 @@
 {{#>default section=sections.records page=sections.records.subsections.transcripts}}
-<div style="min-height: 60vh;">
+<div class="row" style="min-height: 60vh;">
     {{! This is the starter for a section page
         -------------------------------------------------------
         - The tag at the top brings in the default portions
@@ -14,25 +14,13 @@
         <div class="panel panel-default">
             <div class="panel-body">
                 {{#each user.records.semesters}}
-                    <h3>{{semester}}</h3>
-                    <p><span class="text-muted">Semester GPA </span><span class="badge">{{semester_GPA}}</span></p>
-                    <!-- Grade Table -->
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th>Course</th>
-                            <th>Percent</th>
-                            <th>Letter Grade</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>{{#each courses}}
-                                <td>{{code}}{{number}}</td>
-                                <td>{{percent}}</td>
-                                <td>{{letter}}</td>
-                            </tr>{{/each}}
-                        </tbody>
-                    </table>
+                        <section>
+                            <h3>{{semester}}</h3>
+                            <p>
+                                <span class="text-muted">Semester GPA </span><span class="badge">{{semester_GPA}}</span>
+                            </p>
+                            {{> gradeTable static=true}}
+                        </section>
                 {{/each}}
             </div>
         </div>

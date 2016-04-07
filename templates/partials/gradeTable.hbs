@@ -1,0 +1,21 @@
+{{! This is the template for the Grade Table
+    -------------------------------------------------------
+    - Used in Records/Grades and Records/Transcripts
+}}
+<!-- Grade Table -->
+<table class="table table-{{#if static}}striped{{else}}hover{{/if}}" width="100%">
+    <thead>
+        <tr>
+            <th>Course</th>
+            <th>Percent</th>
+            <th>Letter Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>{{#each courses}}
+            <td>{{code}} {{number}}</td>
+            <td>{{percent}}</td>
+            <td>{{letter}}</td>
+        </tr>{{/each}}
+    </tbody>
+</table>
